@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1000" fill="none">
+  <rect width="900" height="1000" rx="48" fill="#14171D"/>
+  <rect x="40" y="40" width="820" height="920" rx="38" fill="url(#bg)"/>
+  <circle cx="450" cy="312" r="154" fill="#F59E0B" fill-opacity=".2"/>
+  <circle cx="450" cy="320" r="104" fill="#F2D7C0"/>
+  <path d="M226 842c32-156 126-252 224-252s192 96 224 252" fill="#352C45"/>
+  <path d="M340 286c34-48 104-82 176-62 38 10 70 36 96 72" stroke="#252030" stroke-width="30" stroke-linecap="round"/>
+  <text x="84" y="906" fill="#F5F5F5" font-family="Arial, sans-serif" font-size="54" font-weight="700">MARINA LEVINA</text>
+  <defs>
+    <linearGradient id="bg" x1="72" x2="816" y1="84" y2="928" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1A1F28"/>
+      <stop offset="1" stop-color="#151A23"/>
+    </linearGradient>
+  </defs>
+</svg>

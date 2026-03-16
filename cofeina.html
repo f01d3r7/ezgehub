@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Kofeina — атмосферная кофейня с авторскими напитками, уютным интерьером и возможностью забронировать столик онлайн."
+    />
+    <title>Kofeina | Атмосферная кофейня</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./kofeina/styles.css" />
+  </head>
+  <body>
+    <header class="hero" id="top">
+      <div class="hero__media" aria-hidden="true"></div>
+      <div class="hero__steam hero__steam--left" aria-hidden="true"></div>
+      <div class="hero__steam hero__steam--right" aria-hidden="true"></div>
+
+      <nav class="topbar" aria-label="Основная навигация">
+        <div class="container topbar__inner">
+          <a class="brand" href="#top" aria-label="Kofeina, перейти к началу">
+            <span class="brand__mark">K</span>
+            <span class="brand__text">Kofeina</span>
+          </a>
+
+          <div class="topbar__links">
+            <a href="#about">О кофейне</a>
+            <a href="#menu">Меню</a>
+            <a href="#gallery">Интерьер</a>
+            <a href="#booking">Бронирование</a>
+            <a href="./index.html#projects">Портфолио</a>
+          </div>
+        </div>
+      </nav>
+
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <span class="hero__eyebrow reveal" data-reveal="fade-up">
+            specialty coffee • slow mornings • warm light
+          </span>
+          <h1 class="hero__title reveal" data-reveal="fade-up" style="--delay: 120ms">
+            Кофе, в который<br />
+            хочется возвращаться
+          </h1>
+          <p class="hero__subtitle reveal" data-reveal="fade-up" style="--delay: 220ms">
+            Авторские напитки, тёплый интерьер и пространство для встреч,
+            работы и отдыха в ритме неспешных городских утр.
+          </p>
+
+          <div class="hero__actions reveal" data-reveal="fade-up" style="--delay: 320ms">
+            <a class="button button--primary" href="#menu">Посмотреть меню</a>
+            <a class="button button--ghost" href="#booking">Забронировать столик</a>
+          </div>
+
+          <div class="hero__facts reveal" data-reveal="fade-up" style="--delay: 420ms">
+            <article class="fact-card">
+              <span class="fact-card__value">7 мин</span>
+              <p>от первого взгляда на меню до вашей чашки на столе</p>
+            </article>
+            <article class="fact-card">
+              <span class="fact-card__value">Fresh roast</span>
+              <p>еженедельная обжарка и молоко, подобранное под каждый напиток</p>
+            </article>
+            <article class="fact-card">
+              <span class="fact-card__value">Work friendly</span>
+              <p>тихие зоны, Wi-Fi и мягкий свет для работы и неспешных встреч</p>
+            </article>
+          </div>
+        </div>
+
+        <aside class="hero__panel reveal" data-reveal="fade-left" style="--delay: 260ms">
+          <div class="hero-panel">
+            <p class="hero-panel__label">Ритуал дня</p>
+            <h2>Медленный глоток, тёплая керамика и место, где легко задержаться.</h2>
+            <div class="hero-panel__meta">
+              <div>
+                <span>Сегодня</span>
+                <strong>Лавандовый раф</strong>
+              </div>
+              <div>
+                <span>Лучшее время</span>
+                <strong>09:00–12:00</strong>
+              </div>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </header>
+
+    <main>
+      <section class="section about" id="about">
+        <div class="container">
+          <div class="section-heading">
+            <span class="section-heading__eyebrow reveal" data-reveal="fade-up">О кофейне</span>
+            <h2 class="section-heading__title reveal" data-reveal="fade-up" style="--delay: 80ms">
+              Место, куда приходят не только за кофе, но и за настроением
+            </h2>
+          </div>
+
+          <div class="about__grid">
+            <div class="about__content">
+              <p class="about__lead reveal" data-reveal="fade-right">
+                Kofeina родилась из желания создать уголок города, в котором
+                хочется задержаться ещё на один разговор, ещё на один абзац,
+                ещё на один глоток.
+              </p>
+
+              <div class="about__story reveal" data-reveal="fade-right" style="--delay: 120ms">
+                <p>
+                  Мы соединяем свежую обжарку, авторские рецепты и интерьер,
+                  где дерево, керамика, тёплый свет и ароматы кофе собираются
+                  в одно мягкое ощущение уюта.
+                </p>
+                <p>
+                  Здесь одинаково хорошо назначать встречу, открывать ноутбук
+                  у окна или просто устраивать себе тихую паузу среди дня.
+                </p>
+              </div>
+
+              <div class="about__points">
+                <article class="about-point reveal" data-reveal="fade-up" style="--delay: 180ms">
+                  <span class="about-point__icon">01</span>
+                  <div>
+                    <h3>Свежеобжаренный кофе</h3>
+                    <p>Подбираем зерно под сезон и вкус, а не под шаблон.</p>
+                  </div>
+                </article>
+
+                <article class="about-point reveal" data-reveal="fade-up" style="--delay: 260ms">
+                  <span class="about-point__icon">02</span>
+                  <div>
+                    <h3>Авторские рецепты</h3>
+                    <p>Лавандовый раф, цитрусовый cold brew и мягкие сезонные акценты.</p>
+                  </div>
+                </article>
+
+                <article class="about-point reveal" data-reveal="fade-up" style="--delay: 340ms">
+                  <span class="about-point__icon">03</span>
+                  <div>
+                    <h3>Уют для встреч и работы</h3>
+                    <p>Удобные посадки, спокойный звук зала и хороший Wi-Fi.</p>
+                  </div>
+                </article>
+              </div>
+            </div>
+
+            <div class="about__visual reveal" data-reveal="fade-left">
+              <div class="about__photo-shell">
+                <img
+                  src="https://images.unsplash.com/photo-1751151015850-ae5e0356bb15?auto=format&fit=crop&w=1200&q=80"
+                  alt="Светлый интерьер кофейни с уютной посадкой"
+                />
+                <div class="about__quote">
+                  <span>атмосфера</span>
+                  <p>Тёплый свет, спокойные детали и чувство, что вас здесь ждали.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--tinted menu" id="menu">
+        <div class="container">
+          <div class="section-heading section-heading--center">
+            <span class="section-heading__eyebrow reveal" data-reveal="fade-up">
+              Меню напитков
+            </span>
+            <h2 class="section-heading__title reveal" data-reveal="fade-up" style="--delay: 80ms">
+              Выбор, который хочется сделать глазами ещё до первого глотка
+            </h2>
+            <p class="section-heading__text reveal" data-reveal="fade-up" style="--delay: 160ms">
+              Три категории, мягкая подача и напитки, которые хочется пробовать
+              в зависимости от настроения и времени дня.
+            </p>
+          </div>
+
+          <div
+            class="menu__tabs reveal"
+            data-reveal="fade-up"
+            style="--delay: 200ms"
+            role="tablist"
+            aria-label="Категории напитков"
+          >
+            <button class="menu-tab is-active" type="button" data-category="classic" role="tab" aria-selected="true">
+              Классика
+            </button>
+            <button class="menu-tab" type="button" data-category="signature" role="tab" aria-selected="false">
+              Авторские напитки
+            </button>
+            <button class="menu-tab" type="button" data-category="cold" role="tab" aria-selected="false">
+              Холодные напитки
+            </button>
+          </div>
+
+          <div class="menu__grid" id="menuGrid" aria-live="polite"></div>
+        </div>
+      </section>
+
+      <section class="section gallery" id="gallery">
+        <div class="container">
+          <div class="section-heading">
+            <span class="section-heading__eyebrow reveal" data-reveal="fade-up">Галерея интерьера</span>
+            <h2 class="section-heading__title reveal" data-reveal="fade-up" style="--delay: 80ms">
+              Пространство, которое хочется почувствовать ещё до визита
+            </h2>
+          </div>
+
+          <div class="gallery__grid">
+            <button
+              class="gallery-card gallery-card--tall reveal"
+              type="button"
+              data-reveal="scale-in"
+              data-lightbox-src="https://images.unsplash.com/photo-1741245307394-62dcbbea2191?auto=format&fit=crop&w=1600&q=80"
+              data-lightbox-caption="Барная зона, где начинается утро и разговоры о хорошем кофе."
+            >
+              <img
+                src="https://images.unsplash.com/photo-1741245307394-62dcbbea2191?auto=format&fit=crop&w=900&q=80"
+                alt="Барная стойка кофейни"
+              />
+              <span>Барная зона</span>
+            </button>
+
+            <button
+              class="gallery-card reveal"
+              type="button"
+              data-reveal="scale-in"
+              style="--delay: 80ms"
+              data-lightbox-src="https://images.unsplash.com/photo-1757343431538-5f8c32c58aed?auto=format&fit=crop&w=1600&q=80"
+              data-lightbox-caption="Общий зал с длинным столом для встреч, ноутбуков и утреннего света."
+            >
+              <img
+                src="https://images.unsplash.com/photo-1757343431538-5f8c32c58aed?auto=format&fit=crop&w=900&q=80"
+                alt="Общий интерьер кофейни с длинным столом"
+              />
+              <span>Общий интерьер</span>
+            </button>
+
+            <button
+              class="gallery-card reveal"
+              type="button"
+              data-reveal="scale-in"
+              style="--delay: 160ms"
+              data-lightbox-src="https://images.unsplash.com/photo-1751151015850-ae5e0356bb15?auto=format&fit=crop&w=1600&q=80"
+              data-lightbox-caption="Спокойная посадка у стены с мягким дневным светом."
+            >
+              <img
+                src="https://images.unsplash.com/photo-1751151015850-ae5e0356bb15?auto=format&fit=crop&w=900&q=80"
+                alt="Уютный уголок кофейни"
+              />
+              <span>Столики у света</span>
+            </button>
+
+            <button
+              class="gallery-card gallery-card--wide reveal"
+              type="button"
+              data-reveal="scale-in"
+              style="--delay: 80ms"
+              data-lightbox-src="https://images.unsplash.com/photo-1771333228939-772d0d355a94?auto=format&fit=crop&w=1600&q=80"
+              data-lightbox-caption="Эспрессо-машина и полки с чашками как часть визуального ритуала."
+            >
+              <img
+                src="https://images.unsplash.com/photo-1771333228939-772d0d355a94?auto=format&fit=crop&w=1200&q=80"
+                alt="Кофейная стойка с эспрессо-машиной и чашками"
+              />
+              <span>Детали бара</span>
+            </button>
+
+            <button
+              class="gallery-card reveal"
+              type="button"
+              data-reveal="scale-in"
+              style="--delay: 160ms"
+              data-lightbox-src="https://images.unsplash.com/photo-1770991966683-472a770d0ebf?auto=format&fit=crop&w=1600&q=80"
+              data-lightbox-caption="Тёмные фактуры, техника и тихая энергия рабочего процесса."
+            >
+              <img
+                src="https://images.unsplash.com/photo-1770991966683-472a770d0ebf?auto=format&fit=crop&w=900&q=80"
+                alt="Эспрессо-машина на темной стойке"
+              />
+              <span>Технология вкуса</span>
+            </button>
+
+            <button
+              class="gallery-card reveal"
+              type="button"
+              data-reveal="scale-in"
+              style="--delay: 240ms"
+              data-lightbox-src="https://images.unsplash.com/photo-1721277000438-488066df7ac8?auto=format&fit=crop&w=1600&q=80"
+              data-lightbox-caption="Кофе и выпечка, которые делают паузу особенно тёплой."
+            >
+              <img
+                src="https://images.unsplash.com/photo-1721277000438-488066df7ac8?auto=format&fit=crop&w=900&q=80"
+                alt="Капучино и круассан на деревянном столе"
+              />
+              <span>Кофе и десерты</span>
+            </button>
+
+            <button
+              class="gallery-card reveal"
+              type="button"
+              data-reveal="scale-in"
+              style="--delay: 320ms"
+              data-lightbox-src="https://images.unsplash.com/photo-1553962311-62f2471b159d?auto=format&fit=crop&w=1600&q=80"
+              data-lightbox-caption="Керамика, латте-арт и та самая близость к чашке."
+            >
+              <img
+                src="https://images.unsplash.com/photo-1553962311-62f2471b159d?auto=format&fit=crop&w=900&q=80"
+                alt="Чашка с латте-артом"
+              />
+              <span>Тёплая керамика</span>
+            </button>
+
+            <button
+              class="gallery-card gallery-card--wide reveal"
+              type="button"
+              data-reveal="scale-in"
+              style="--delay: 200ms"
+              data-lightbox-src="https://images.unsplash.com/photo-1592395939542-d59b3cb2bfc0?auto=format&fit=crop&w=1600&q=80"
+              data-lightbox-caption="Зёрна, древесина и тактильные детали, из которых складывается настроение."
+            >
+              <img
+                src="https://images.unsplash.com/photo-1592395939542-d59b3cb2bfc0?auto=format&fit=crop&w=1200&q=80"
+                alt="Кофейные зерна на деревянной поверхности"
+              />
+              <span>Фактура и аромат</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--accent features" id="features">
+        <div class="container">
+          <div class="section-heading section-heading--center">
+            <span class="section-heading__eyebrow reveal" data-reveal="fade-up">
+              Почему гости выбирают нас
+            </span>
+            <h2 class="section-heading__title reveal" data-reveal="fade-up" style="--delay: 80ms">
+              Эмоция остаётся, потому что за ней стоит продуманное удобство
+            </h2>
+          </div>
+
+          <div class="features__grid">
+            <article class="feature-card reveal" data-reveal="fade-up">
+              <div class="feature-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 32 32">
+                  <path d="M4 24h24M8 10h16v10H8zM12 6h8" />
+                </svg>
+              </div>
+              <h3>Wi-Fi и места для работы</h3>
+              <p>Удобные столы, розетки поблизости и спокойный фон без лишнего шума.</p>
+            </article>
+
+            <article class="feature-card reveal" data-reveal="fade-up" style="--delay: 100ms">
+              <div class="feature-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 32 32">
+                  <path d="M7 20c0-5 4-9 9-9s9 4 9 9M8 20h16M10 24h12" />
+                </svg>
+              </div>
+              <h3>Свежая выпечка и десерты</h3>
+              <p>Круассаны, чизкейк и десерты, которые поддерживают настроение напитка.</p>
+            </article>
+
+            <article class="feature-card reveal" data-reveal="fade-up" style="--delay: 200ms">
+              <div class="feature-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 32 32">
+                  <path d="M16 28s8-7.2 8-14a8 8 0 1 0-16 0c0 6.8 8 14 8 14Z" />
+                  <circle cx="16" cy="14" r="2.6" />
+                </svg>
+              </div>
+              <h3>Удобное расположение</h3>
+              <p>В центре города, чтобы зайти на встречу, перед работой или после прогулки.</p>
+            </article>
+
+            <article class="feature-card reveal" data-reveal="fade-up" style="--delay: 300ms">
+              <div class="feature-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 32 32">
+                  <path d="M10 12a6 6 0 1 1 12 0v6a6 6 0 1 1-12 0Zm-3 11h18" />
+                </svg>
+              </div>
+              <h3>Тихая атмосфера для встреч</h3>
+              <p>Свет, акустика и расстояние между столами помогают разговаривать без спешки.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section booking" id="booking">
+        <div class="container booking__layout">
+          <div class="booking__intro">
+            <span class="section-heading__eyebrow reveal" data-reveal="fade-up">Бронирование</span>
+            <h2 class="section-heading__title reveal" data-reveal="fade-up" style="--delay: 80ms">
+              Забронируйте столик и оставьте за собой нужное настроение
+            </h2>
+            <p class="section-heading__text reveal" data-reveal="fade-up" style="--delay: 160ms">
+              Для неспешного завтрака, рабочей встречи или вечера с друзьями мы
+              подготовим место заранее.
+            </p>
+
+            <div class="booking__info">
+              <article class="booking-note reveal" data-reveal="fade-right" style="--delay: 220ms">
+                <span>Адрес</span>
+                <strong>Москва, Петровка 21</strong>
+              </article>
+              <article class="booking-note reveal" data-reveal="fade-right" style="--delay: 300ms">
+                <span>Часы работы</span>
+                <strong>08:00 — 22:00 ежедневно</strong>
+              </article>
+              <article class="booking-note reveal" data-reveal="fade-right" style="--delay: 380ms">
+                <span>Телефон</span>
+                <strong><a href="tel:+74951234567">+7 (495) 123-45-67</a></strong>
+              </article>
+            </div>
+
+            <div class="booking__photo reveal" data-reveal="fade-right" style="--delay: 460ms">
+              <img
+                src="https://images.unsplash.com/photo-1721277000438-488066df7ac8?auto=format&fit=crop&w=1200&q=80"
+                alt="Кофе и круассан для атмосферы кофейни"
+              />
+            </div>
+          </div>
+
+          <div class="booking__form-shell reveal" data-reveal="fade-left" style="--delay: 180ms">
+            <form class="booking-form" id="bookingForm" novalidate>
+              <div class="booking-form__header">
+                <p>Ваш столик</p>
+                <span>Подтвердим бронь по телефону в течение 10 минут.</span>
+              </div>
+
+              <div class="booking-form__grid">
+                <label class="field">
+                  <span>Имя</span>
+                  <input type="text" name="name" placeholder="Как к вам обращаться" required />
+                  <small class="field__error"></small>
+                </label>
+
+                <label class="field">
+                  <span>Телефон</span>
+                  <input type="tel" name="phone" placeholder="+7 (___) ___-__-__" required />
+                  <small class="field__error"></small>
+                </label>
+
+                <label class="field">
+                  <span>Дата</span>
+                  <input type="date" name="date" required />
+                  <small class="field__error"></small>
+                </label>
+
+                <label class="field">
+                  <span>Время</span>
+                  <input type="time" name="time" required />
+                  <small class="field__error"></small>
+                </label>
+
+                <label class="field">
+                  <span>Количество гостей</span>
+                  <select name="guests" required>
+                    <option value="">Выберите</option>
+                    <option value="1">1 гость</option>
+                    <option value="2">2 гостя</option>
+                    <option value="3">3 гостя</option>
+                    <option value="4">4 гостя</option>
+                    <option value="5+">5 и более</option>
+                  </select>
+                  <small class="field__error"></small>
+                </label>
+
+                <label class="field field--full">
+                  <span>Комментарий</span>
+                  <textarea
+                    name="comment"
+                    rows="4"
+                    placeholder="Например: столик у окна, встреча на двоих, нужен спокойный угол"
+                  ></textarea>
+                </label>
+              </div>
+
+              <button class="button button--primary button--wide" type="submit">
+                Забронировать
+              </button>
+
+              <p class="booking-form__success" id="formSuccess" hidden aria-live="polite">
+                Спасибо. Бронь принята, скоро свяжемся с вами для подтверждения.
+              </p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <div>
+          <a class="brand brand--footer" href="#top">
+            <span class="brand__mark">K</span>
+            <span class="brand__text">Kofeina</span>
+          </a>
+          <p>Кофейня для встреч, утренних ритуалов и красивых пауз среди города.</p>
+        </div>
+        <span>© 2026 Kofeina. Атмосфера, к которой хочется вернуться.</span>
+      </div>
+    </footer>
+
+    <div class="lightbox" id="lightbox" aria-hidden="true">
+      <button class="lightbox__backdrop" type="button" aria-label="Закрыть просмотр"></button>
+      <div class="lightbox__dialog" role="dialog" aria-modal="true" aria-label="Просмотр изображения">
+        <button class="lightbox__close" type="button" aria-label="Закрыть">
+          <span></span>
+          <span></span>
+        </button>
+        <img class="lightbox__image" src="" alt="" />
+        <p class="lightbox__caption"></p>
+      </div>
+    </div>
+
+    <script src="./kofeina/script.js"></script>
+  </body>
+</html>

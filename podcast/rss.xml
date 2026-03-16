@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Точка сигнала</title>
+    <link>https://example.com/podcast</link>
+    <description>Демо-RSS лента лендинга подкаста «Точка сигнала».</description>
+    <language>ru-RU</language>
+    <item>
+      <title>Как внимательность становится конкурентным преимуществом</title>
+      <description>Демо-выпуск для лендинга подкаста.</description>
+      <pubDate>Sat, 14 Mar 2026 10:00:00 +0300</pubDate>
+      <guid>episode-1</guid>
+    </item>
+  </channel>
+</rss>

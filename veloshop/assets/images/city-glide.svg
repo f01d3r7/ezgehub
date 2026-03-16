@@ -1,0 +1,13 @@
+<svg width="1200" height="800" viewBox="0 0 1200 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="800" rx="48" fill="#2A463A"/>
+  <circle cx="970" cy="140" r="170" fill="#E9F0D8" fill-opacity="0.2"/>
+  <rect x="0" y="470" width="1200" height="330" fill="#65836F"/>
+  <rect x="160" y="360" width="90" height="220" rx="18" fill="#C6D0C0" fill-opacity="0.3"/>
+  <rect x="320" y="300" width="90" height="280" rx="18" fill="#C6D0C0" fill-opacity="0.24"/>
+  <rect x="480" y="390" width="90" height="190" rx="18" fill="#C6D0C0" fill-opacity="0.22"/>
+  <circle cx="360" cy="565" r="110" stroke="#F7F6F2" stroke-opacity="0.3" stroke-width="20"/>
+  <circle cx="820" cy="565" r="110" stroke="#F7F6F2" stroke-opacity="0.3" stroke-width="20"/>
+  <path d="M360 565L520 430H720L820 565M520 430L610 565M610 565L720 430M610 565H490M720 430L720 355M720 355H790" stroke="#F7F6F2" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="110" y="150" fill="#F7F6F2" font-family="Trebuchet MS, sans-serif" font-size="72" font-weight="700">CITY</text>
+  <text x="110" y="218" fill="#F7F6F2" fill-opacity="0.72" font-family="Trebuchet MS, sans-serif" font-size="34">Comfort position • daily commute • smooth pace</text>
+</svg>

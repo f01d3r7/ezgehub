@@ -1,0 +1,10 @@
+<svg width="1200" height="800" viewBox="0 0 1200 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="800" rx="48" fill="#163225"/>
+  <circle cx="950" cy="150" r="180" fill="#F28C28" fill-opacity="0.18"/>
+  <path d="M0 610L170 420L340 560L520 320L700 540L880 280L1020 450L1200 260V800H0V610Z" fill="#2D5E47"/>
+  <circle cx="340" cy="560" r="110" stroke="#F4F1E8" stroke-opacity="0.28" stroke-width="22"/>
+  <circle cx="835" cy="560" r="110" stroke="#F4F1E8" stroke-opacity="0.28" stroke-width="22"/>
+  <path d="M340 560L520 410H700L835 560M520 410L610 560M610 560L700 410M610 560H500" stroke="#F4F1E8" stroke-width="20" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="110" y="150" fill="#F4F1E8" font-family="Trebuchet MS, sans-serif" font-size="72" font-weight="700">MOUNTAIN</text>
+  <text x="110" y="218" fill="#F4F1E8" fill-opacity="0.7" font-family="Trebuchet MS, sans-serif" font-size="34">Trail geometry • disc brakes • 29&quot;</text>
+</svg>

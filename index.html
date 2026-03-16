@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Многостраничное портфолио frontend/fullstack developer: адаптивные лендинги, e-commerce MVP, интерактивные UI и качественная фронтенд-реализация."
+    />
+    <title>Ezge Portfolio Hub | Frontend / Fullstack Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./portfolio-assets/css/main.css" />
+    <script src="./portfolio-assets/js/main.js" defer></script>
+  </head>
+  <body class="page page--home">
+    <a class="skip-link" href="#main-content">Перейти к содержимому</a>
+
+    <header class="header" data-header>
+      <div class="container header__container">
+        <a class="header__logo" href="./index.html" aria-label="Ezge Portfolio Hub">
+          <span class="header__logo-mark">EZ</span>
+          <span class="header__logo-copy">
+            <strong>Ezge Portfolio Hub</strong>
+            <span>frontend / fullstack developer</span>
+          </span>
+        </a>
+
+        <button
+          class="header__toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="site-nav"
+          aria-label="Открыть меню"
+          data-menu-toggle
+        >
+          <span></span>
+          <span></span>
+        </button>
+
+        <div class="header__menu" id="site-nav" data-menu>
+          <nav class="nav header__nav" aria-label="Основная навигация">
+            <a class="nav__link" href="#projects">Проекты</a>
+            <a class="nav__link" href="./about.html">Обо мне</a>
+            <a class="nav__link" href="./contacts.html">Контакты</a>
+          </nav>
+
+          <a class="button button--primary header__cta" href="./contacts.html">Связаться</a>
+        </div>
+      </div>
+    </header>
+
+    <main class="page__main" id="main-content">
+      <section class="hero page__hero">
+        <div class="container hero__container">
+          <div class="hero__content" data-reveal>
+            <p class="hero__eyebrow">dark minimal / editorial tech</p>
+            <h1 class="hero__title">
+              Создаю адаптивные сайты и интерфейсы, которые выглядят точно, работают быстро и хорошо
+              масштабируются
+            </h1>
+            <p class="hero__text">
+              Разрабатываю сайты и интерфейсы, где визуал, логика и скорость работают вместе — чтобы бизнес выглядел сильнее, вызывал доверие и приводил к действию.
+            </p>
+
+            <div class="hero__actions">
+              <a class="button button--primary button--large" href="#projects">Смотреть проекты</a>
+              <a class="button button--secondary button--large" href="./contacts.html">Связаться</a>
+            </div>
+
+            <ul class="hero__metrics" aria-label="Ключевые метрики портфолио">
+              <li class="surface-card surface-card--compact">
+                <strong>4</strong>
+                <span>полноценных проекта с разной предметной областью</span>
+              </li>
+              <li class="surface-card surface-card--compact">
+                <strong>2</strong>
+                <span>многостраничных сценария и единая навигационная система</span>
+              </li>
+              <li class="surface-card surface-card--compact">
+                <strong>100%</strong>
+                <span>адаптивный подход, фокус на семантике и доступности</span>
+              </li>
+            </ul>
+          </div>
+
+          <aside class="hero__visual" aria-label="Ключевые акценты портфолио" data-reveal>
+            <div class="hero-card hero-card--featured">
+              <p class="hero-card__label">Фокус</p>
+              <h2>От проектной витрины до UX-полировки.</h2>
+              <p>
+                В работе важны визуальная система, чистая структура, корректные состояния интерфейса и уверенное
+                поведение на desktop, tablet и mobile.
+              </p>
+            </div>
+
+            <div class="hero-card hero-card--stack">
+              <p class="hero-card__label">Стек</p>
+              <ul class="hero-card__tags">
+                <li>HTML5</li>
+                <li>SCSS / CSS</li>
+                <li>JavaScript</li>
+                <li>BEM</li>
+                <li>Accessibility</li>
+                <li>Performance</li>
+              </ul>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section page__projects" id="projects">
+        <div class="container">
+          <div class="section-head" data-reveal>
+            <div>
+              <p class="section-head__eyebrow">selected work</p>
+              <h2 class="section-head__title">Четыре проекта, четыре разные микро-айдентики.</h2>
+            </div>
+            <p class="section-head__text">
+              Каждый кейс решает свою задачу: от атмосферного бренд-лендинга до e-commerce MVP с каталогом,
+              фильтрацией, корзиной и сравнением.
+            </p>
+          </div>
+
+          <div class="projects-grid">
+            <article class="projects-grid__item project-card project-card--kofeina" data-reveal>
+              <a class="project-card__link" href="./cofeina.html" aria-label="Открыть проект Kofeina">
+                <figure class="project-card__media" aria-hidden="true">
+                  <span class="project-card__badge">Coffee experience</span>
+                  <span class="project-card__screen"></span>
+                  <span class="project-card__screen project-card__screen--secondary"></span>
+                  <span class="project-card__mesh"></span>
+                </figure>
+                <div class="project-card__overlay">
+                  <p class="project-card__eyebrow">брендовый лендинг</p>
+                  <h3 class="project-card__title">Kofeina</h3>
+                  <p class="project-card__text">
+                    Атмосферная кофейня с мягкой кинематографичной подачей, gallery-lightbox, секцией меню и
+                    бронированием столика.
+                  </p>
+                  <ul class="project-card__meta" aria-label="Технологии проекта Kofeina">
+                    <li>HTML / CSS / JS</li>
+                    <li>Reveal motion</li>
+                    <li>Booking UX</li>
+                  </ul>
+                  <span class="project-card__action">Открыть проект</span>
+                </div>
+              </a>
+            </article>
+
+            <article class="projects-grid__item project-card project-card--bookclub" data-reveal>
+              <a class="project-card__link" href="./bookclub.html" aria-label="Открыть проект Litera Society">
+                <figure class="project-card__media" aria-hidden="true">
+                  <span class="project-card__badge">Editorial landing</span>
+                  <span class="project-card__screen"></span>
+                  <span class="project-card__screen project-card__screen--secondary"></span>
+                  <span class="project-card__mesh"></span>
+                </figure>
+                <div class="project-card__overlay">
+                  <p class="project-card__eyebrow">книжный клуб</p>
+                  <h3 class="project-card__title">Litera Society</h3>
+                  <p class="project-card__text">
+                    Лонгрид-лендинг с редакционной типографикой, календарём встреч, преимуществами клуба и точками
+                    входа в заявку.
+                  </p>
+                  <ul class="project-card__meta" aria-label="Технологии проекта Litera Society">
+                    <li>Semantic HTML</li>
+                    <li>Adaptive grid</li>
+                    <li>Form UX</li>
+                  </ul>
+                  <span class="project-card__action">Открыть проект</span>
+                </div>
+              </a>
+            </article>
+
+            <article class="projects-grid__item project-card project-card--podcast" data-reveal>
+              <a class="project-card__link" href="./podcast.html" aria-label="Открыть проект Точка сигнала">
+                <figure class="project-card__media" aria-hidden="true">
+                  <span class="project-card__badge">Media product</span>
+                  <span class="project-card__screen"></span>
+                  <span class="project-card__screen project-card__screen--secondary"></span>
+                  <span class="project-card__mesh"></span>
+                </figure>
+                <div class="project-card__overlay">
+                  <p class="project-card__eyebrow">подкаст-лендинг</p>
+                  <h3 class="project-card__title">Точка сигнала</h3>
+                  <p class="project-card__text">
+                    Медиа-страница с кастомным аудиоплеером, карточками эпизодов, guest-slider и маршрутом в
+                    подписку.
+                  </p>
+                  <ul class="project-card__meta" aria-label="Технологии проекта Точка сигнала">
+                    <li>Custom player</li>
+                    <li>Accessible controls</li>
+                    <li>RSS</li>
+                  </ul>
+                  <span class="project-card__action">Открыть проект</span>
+                </div>
+              </a>
+            </article>
+
+            <article class="projects-grid__item project-card project-card--velo" data-reveal>
+              <a class="project-card__link" href="./mainvelo.html" aria-label="Открыть проект VeloShop">
+                <figure class="project-card__media" aria-hidden="true">
+                  <span class="project-card__badge">E-commerce MVP</span>
+                  <span class="project-card__screen"></span>
+                  <span class="project-card__screen project-card__screen--secondary"></span>
+                  <span class="project-card__mesh"></span>
+                </figure>
+                <div class="project-card__overlay">
+                  <p class="project-card__eyebrow">две страницы продукта</p>
+                  <h3 class="project-card__title">VeloShop</h3>
+                  <p class="project-card__text">
+                    Витрина и каталог интернет-магазина с фильтрами, сортировкой, localStorage-состоянием, корзиной
+                    и сравнением моделей.
+                  </p>
+                  <ul class="project-card__meta" aria-label="Технологии проекта VeloShop">
+                    <li>Data-driven UI</li>
+                    <li>Catalog flow</li>
+                    <li>Local storage</li>
+                  </ul>
+                  <span class="project-card__action">Открыть проект</span>
+                </div>
+              </a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section page__about-preview">
+        <div class="container about-block about-block--highlight">
+          <div class="about-block__content" data-reveal>
+            <p class="section-head__eyebrow">about</p>
+            <h2 class="about-block__title">
+              Работаю на стыке визуальной аккуратности, системной верстки и продуманного взаимодействия.
+            </h2>
+            <p class="about-block__text">
+              Мне интересны интерфейсы, которые не просто выглядят современно, а показывают зрелую фронтенд-логику:
+              чистую структуру компонентов, удобный DOM-порядок, заметные фокус-состояния и адаптив, который не
+              распадается на сложных секциях.
+            </p>
+            <a class="button button--secondary" href="./about.html">Подробнее обо мне</a>
+          </div>
+
+          <div class="about-block__cards" data-reveal>
+            <article class="surface-card">
+              <p class="surface-card__eyebrow">Сильные стороны</p>
+              <h3>Адаптив, сетка, ритм интерфейса</h3>
+              <p>Слежу за тем, чтобы крупные секции, карточки и CTA одинаково уверенно читались на всех брейкпоинтах.</p>
+            </article>
+            <article class="surface-card">
+              <p class="surface-card__eyebrow">Подход</p>
+              <h3>Сначала система, потом полировка</h3>
+              <p>Собираю основу через переменные, переиспользуемые паттерны и только потом усиливаю проект анимациями.</p>
+            </article>
+            <article class="surface-card">
+              <p class="surface-card__eyebrow">Фокус</p>
+              <h3>Семантика и доступность</h3>
+              <p>Закладываю корректную структуру, сценарии с клавиатуры, контраст и бережное обращение с motion.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section page__stack">
+        <div class="container">
+          <div class="section-head" data-reveal>
+            <div>
+              <p class="section-head__eyebrow">tech stack</p>
+              <h2 class="section-head__title">Инструменты и зоны ответственности.</h2>
+            </div>
+            <p class="section-head__text">
+              От прототипирования сетки и дизайн-системы до доработки состояний форм, анимаций, данных и локальной
+              логики приложения.
+            </p>
+          </div>
+
+          <div class="tech-stack" data-reveal>
+            <article class="tech-stack__group">
+              <h3 class="tech-stack__title">Frontend</h3>
+              <ul class="tech-stack__chips">
+                <li>HTML5</li>
+                <li>CSS3 / SCSS</li>
+                <li>JavaScript</li>
+                <li>BEM</li>
+                <li>Adaptive Layout</li>
+                <li>ARIA basics</li>
+              </ul>
+            </article>
+            <article class="tech-stack__group">
+              <h3 class="tech-stack__title">UI / UX</h3>
+              <ul class="tech-stack__chips">
+                <li>Design systems</li>
+                <li>Editorial layouts</li>
+                <li>Component thinking</li>
+                <li>Microinteractions</li>
+                <li>Forms</li>
+                <li>Content structure</li>
+              </ul>
+            </article>
+            <article class="tech-stack__group">
+              <h3 class="tech-stack__title">Logic</h3>
+              <ul class="tech-stack__chips">
+                <li>State handling</li>
+                <li>Filtering / sorting</li>
+                <li>LocalStorage</li>
+                <li>Custom players</li>
+                <li>Reusable patterns</li>
+                <li>Progressive enhancement</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container cta-block" data-reveal>
+          <div class="cta-block__content">
+            <p class="cta-block__eyebrow">next step</p>
+            <h2 class="cta-block__title">Если нужен аккуратный frontend, можно обсудить проект уже сейчас.</h2>
+            <p class="cta-block__text">
+              Подключусь к лендингу, промо-сайту, MVP или интерфейсной части продукта, где важны адаптив, качество
+              реализации и цельная подача.
+            </p>
+          </div>
+          <div class="cta-block__actions">
+            <a class="button button--primary button--large" href="./contacts.html">Перейти в контакты</a>
+            <a class="button button--ghost button--large" href="./about.html">Узнать больше</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__container">
+        <div class="footer__brand">
+          <a class="footer__logo" href="./index.html">Ezge Portfolio Hub</a>
+          <p class="footer__text">
+            Многостраничный portfolio-hub, где каждый проект — отдельный продукт с продуманной структурой, адаптивом и современной frontend-реализацией.
+          </p>
+        </div>
+
+        <nav class="footer__nav" aria-label="Навигация по сайту">
+          <a href="#projects">Проекты</a>
+          <a href="./about.html">Обо мне</a>
+          <a href="./contacts.html">Контакты</a>
+          <a href="./404.html">404</a>
+        </nav>
+
+        <div class="footer__contacts">
+          <a href="mailto:ezge18@gmail.com">ezge18@gmail.com</a>
+          <a href="https://t.me/f01d3r7" target="_blank" rel="noreferrer">Telegram</a>
+          <a href="https://github.com/f01d3r7" target="_blank" rel="noreferrer">GitHub</a>
+        </div>
+      </div>
+      <div class="container footer__bottom">
+        <p>© <span data-current-year></span> Ezge Portfolio Hub</p>
+      </div>
+    </footer>
+  </body>
+</html>

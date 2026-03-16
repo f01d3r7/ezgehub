@@ -1,0 +1,34 @@
+:root {
+  --font-heading: Georgia, "Times New Roman", serif;
+  --font-body: "Trebuchet MS", "Gill Sans", "Lucida Sans", sans-serif;
+  --color-bg: #f7f6f2;
+  --color-surface: #ffffff;
+  --color-surface-alt: #eef3ea;
+  --color-surface-strong: #13291e;
+  --color-text: #112018;
+  --color-muted: #5f6c63;
+  --color-accent: #1f6b45;
+  --color-accent-strong: #144d31;
+  --color-accent-alt: #f28c28;
+  --color-border: #d8e0d7;
+  --color-border-strong: #a8b6aa;
+  --color-danger: #c54444;
+  --color-white: #ffffff;
+  --gradient-hero:
+    radial-gradient(circle at top left, rgba(242, 140, 40, 0.24), transparent 36%),
+    radial-gradient(circle at 80% 20%, rgba(31, 107, 69, 0.35), transparent 32%),
+    linear-gradient(135deg, #13291e 0%, #183828 35%, #244d38 100%);
+  --gradient-soft:
+    radial-gradient(circle at top, rgba(242, 140, 40, 0.18), transparent 32%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.9), rgba(238, 243, 234, 0.9));
+  --shadow-md: 0 16px 40px rgba(17, 32, 24, 0.12);
+  --shadow-sm: 0 10px 24px rgba(17, 32, 24, 0.08);
+  --radius-xl: 36px;
+  --radius-lg: 28px;
+  --radius-md: 18px;
+  --radius-sm: 12px;
+  --container-width: 1280px;
+  --transition-fast: 0.2s ease;
+  --transition-base: 0.35s ease;
+  --space-section: clamp(4.5rem, 6vw, 7rem);
+}

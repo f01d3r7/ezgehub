@@ -1,0 +1,11 @@
+<svg width="1200" height="800" viewBox="0 0 1200 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="800" rx="48" fill="#18392D"/>
+  <circle cx="930" cy="150" r="185" fill="#68D7A8" fill-opacity="0.2"/>
+  <path d="M0 610L170 500L340 540L520 420L760 470L950 340L1200 410V800H0V610Z" fill="#267256"/>
+  <circle cx="340" cy="560" r="110" stroke="#EAF7F0" stroke-opacity="0.32" stroke-width="20"/>
+  <circle cx="840" cy="560" r="110" stroke="#EAF7F0" stroke-opacity="0.32" stroke-width="20"/>
+  <path d="M340 560L520 420H720L840 560M520 420L610 560M610 560L720 420M610 560H505M610 480L650 480L650 560L610 560V480Z" stroke="#EAF7F0" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M760 250L700 340H760L710 430" stroke="#F28C28" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="110" y="150" fill="#EAF7F0" font-family="Trebuchet MS, sans-serif" font-size="72" font-weight="700">ELECTRIC</text>
+  <text x="110" y="218" fill="#EAF7F0" fill-opacity="0.72" font-family="Trebuchet MS, sans-serif" font-size="34">Motor assist • long range • easy climbs</text>
+</svg>

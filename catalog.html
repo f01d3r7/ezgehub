@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VeloShop — каталог велосипедов</title>
+    <link rel="stylesheet" href="./veloshop/css/reset.css">
+    <link rel="stylesheet" href="./veloshop/css/variables.css">
+    <link rel="stylesheet" href="./veloshop/css/main.css">
+    <link rel="stylesheet" href="./veloshop/css/catalog.css">
+    <script type="module" src="./veloshop/js/catalog.js"></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container site-header__inner">
+        <a class="logo" href="./mainvelo.html">VeloShop</a>
+        <nav class="site-nav" aria-label="Основная навигация">
+          <a href="./mainvelo.html#categories">Категории</a>
+          <a href="./mainvelo.html#featured">Популярное</a>
+          <a href="./catalog.html" aria-current="page">Каталог</a>
+          <a href="./index.html#projects">Портфолио</a>
+        </nav>
+        <div class="site-header__actions">
+          <button class="icon-button" type="button" id="compare-open-btn" data-action="open-compare">
+            Сравнение
+            <span class="counter-chip" data-compare-counter>0</span>
+          </button>
+          <button class="icon-button icon-button--accent" type="button" id="cart-open-btn" data-action="open-cart">
+            Корзина
+            <span class="counter-chip" data-cart-counter>0</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main class="catalog-page">
+      <section class="catalog-hero section">
+        <div class="container">
+          <p class="breadcrumbs"><a href="./mainvelo.html">Главная</a> / Каталог</p>
+          <div class="catalog-hero__content">
+            <div>
+              <p class="eyebrow">Каталог</p>
+              <h1>Подберите велосипед по типу, бюджету и характеру поездок</h1>
+            </div>
+            <p>
+              Каталог построен вокруг данных: сначала фильтры и сортировка, потом рендер карточек,
+              затем сравнение и корзина без потери состояния.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="catalog-layout section">
+        <div class="container catalog-layout__grid">
+          <aside class="filters-sidebar card">
+            <div class="filters-sidebar__header">
+              <p class="eyebrow">Фильтры</p>
+              <h2>Настройте подборку</h2>
+            </div>
+            <form id="catalog-filters">
+              <div class="filter-group">
+                <h3 class="filter-group__title">Тип велосипеда</h3>
+                <label class="filter-option">
+                  <input type="radio" name="bike-type" value="all" checked>
+                  <span>Все модели</span>
+                </label>
+                <label class="filter-option">
+                  <input type="radio" name="bike-type" value="mountain">
+                  <span>Горные</span>
+                </label>
+                <label class="filter-option">
+                  <input type="radio" name="bike-type" value="road">
+                  <span>Шоссейные</span>
+                </label>
+                <label class="filter-option">
+                  <input type="radio" name="bike-type" value="city">
+                  <span>Городские</span>
+                </label>
+                <label class="filter-option">
+                  <input type="radio" name="bike-type" value="bmx">
+                  <span>BMX</span>
+                </label>
+                <label class="filter-option">
+                  <input type="radio" name="bike-type" value="electric">
+                  <span>Электро</span>
+                </label>
+              </div>
+
+              <div class="filter-group">
+                <h3 class="filter-group__title">Цена</h3>
+                <label class="filter-option">
+                  <input type="radio" name="price-range" value="all" checked>
+                  <span>Любая цена</span>
+                </label>
+                <label class="filter-option">
+                  <input type="radio" name="price-range" value="under-500">
+                  <span>До 500 $</span>
+                </label>
+                <label class="filter-option">
+                  <input type="radio" name="price-range" value="500-1000">
+                  <span>500–1000 $</span>
+                </label>
+                <label class="filter-option">
+                  <input type="radio" name="price-range" value="1000-2000">
+                  <span>1000–2000 $</span>
+                </label>
+                <label class="filter-option">
+                  <input type="radio" name="price-range" value="over-2000">
+                  <span>От 2000 $</span>
+                </label>
+              </div>
+
+              <button class="btn btn--ghost btn--wide" type="button" data-action="reset-filters">Сбросить фильтры</button>
+            </form>
+          </aside>
+
+          <div class="catalog-content">
+            <div class="catalog-toolbar card">
+              <div>
+                <p class="eyebrow">Управление выдачей</p>
+                <p class="catalog-toolbar__hint">Сортировка всегда применяется после фильтров.</p>
+              </div>
+              <div class="catalog-toolbar__actions">
+                <label class="select-field" for="sort-select">
+                  <span>Сортировать</span>
+                  <select id="sort-select">
+                    <option value="popular">По популярности</option>
+                    <option value="price-asc">Сначала дешевле</option>
+                    <option value="price-desc">Сначала дороже</option>
+                    <option value="name-asc">По названию</option>
+                  </select>
+                </label>
+                <button class="btn btn--secondary" type="button" data-action="open-compare">
+                  Открыть сравнение
+                  <span class="counter-chip" data-compare-counter>0</span>
+                </button>
+              </div>
+            </div>
+
+            <p class="results-count" id="results-count">Найдено: 0 моделей</p>
+            <div class="products-grid" id="catalog-products"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <aside class="cart-drawer" id="cart-drawer" aria-hidden="true">
+      <button class="cart-drawer__backdrop" type="button" data-action="close-cart" aria-label="Закрыть корзину"></button>
+      <div class="cart-drawer__panel">
+        <div class="cart-drawer__header">
+          <div>
+            <p class="eyebrow">Корзина</p>
+            <h2>Выбранные модели</h2>
+          </div>
+          <button class="icon-button icon-button--ghost" type="button" data-action="close-cart">Закрыть</button>
+        </div>
+        <div class="cart-drawer__body" id="cart-items"></div>
+        <div class="cart-summary">
+          <div class="cart-summary__row">
+            <span>Итого</span>
+            <strong id="cart-total">0 $</strong>
+          </div>
+          <button class="btn btn--primary btn--wide" type="button" data-action="checkout">Оформить</button>
+        </div>
+      </div>
+    </aside>
+
+    <div class="compare-modal" id="compare-modal" aria-hidden="true">
+      <button class="compare-modal__backdrop" type="button" data-action="close-compare" aria-label="Закрыть сравнение"></button>
+      <div class="compare-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="compare-title">
+        <div class="compare-modal__header">
+          <div>
+            <p class="eyebrow">Сравнение</p>
+            <h2 id="compare-title">Сравните ключевые характеристики</h2>
+          </div>
+          <button class="icon-button icon-button--ghost" type="button" data-action="close-compare">Закрыть</button>
+        </div>
+        <div class="compare-modal__content" id="compare-content"></div>
+      </div>
+    </div>
+
+    <footer class="site-footer">
+      <div class="container site-footer__inner">
+        <div>
+          <a class="logo" href="./mainvelo.html">VeloShop</a>
+          <p>Каталог, фильтры, сравнение и корзина в рамках одного frontend MVP.</p>
+        </div>
+        <p>&copy; <span data-current-year></span> VeloShop</p>
+      </div>
+    </footer>
+  </body>
+</html>

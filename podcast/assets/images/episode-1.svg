@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1200" fill="none">
+  <rect width="1200" height="1200" rx="72" fill="#11151D"/>
+  <rect x="56" y="56" width="1088" height="1088" rx="56" fill="url(#bg)"/>
+  <circle cx="930" cy="220" r="170" fill="#8B5CF6" fill-opacity=".22"/>
+  <circle cx="270" cy="960" r="210" fill="#F59E0B" fill-opacity=".14"/>
+  <circle cx="600" cy="600" r="305" fill="#0F1115" fill-opacity=".6" stroke="#313747" stroke-width="2"/>
+  <circle cx="600" cy="600" r="210" stroke="#F5F5F5" stroke-opacity=".08" stroke-width="22"/>
+  <circle cx="600" cy="600" r="96" fill="url(#core)"/>
+  <path d="M182 282H502" stroke="#F5F5F5" stroke-opacity=".22" stroke-width="18" stroke-linecap="round"/>
+  <path d="M182 336H438" stroke="#F5F5F5" stroke-opacity=".18" stroke-width="18" stroke-linecap="round"/>
+  <text x="184" y="898" fill="#F59E0B" font-family="Arial, sans-serif" font-size="42" font-weight="700" letter-spacing="10">EP 01</text>
+  <text x="184" y="972" fill="#F5F5F5" font-family="Arial, sans-serif" font-size="88" font-weight="700">Focus Wins</text>
+  <defs>
+    <linearGradient id="bg" x1="98" x2="1078" y1="84" y2="1079" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1A1D24"/>
+      <stop offset="1" stop-color="#171B22"/>
+    </linearGradient>
+    <linearGradient id="core" x1="520" x2="688" y1="504" y2="680" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F59E0B"/>
+      <stop offset="1" stop-color="#8B5CF6"/>
+    </linearGradient>
+  </defs>
+</svg>

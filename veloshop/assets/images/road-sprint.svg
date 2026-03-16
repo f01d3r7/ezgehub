@@ -1,0 +1,10 @@
+<svg width="1200" height="800" viewBox="0 0 1200 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="800" rx="48" fill="#203252"/>
+  <circle cx="930" cy="160" r="190" fill="#82A8E2" fill-opacity="0.2"/>
+  <path d="M0 620C150 580 320 520 480 500C720 470 920 530 1200 440V800H0V620Z" fill="#385987"/>
+  <circle cx="360" cy="555" r="106" stroke="#F5F7FB" stroke-opacity="0.32" stroke-width="20"/>
+  <circle cx="860" cy="555" r="106" stroke="#F5F7FB" stroke-opacity="0.32" stroke-width="20"/>
+  <path d="M360 555L540 400L710 415L860 555M540 400L620 555M620 555L710 415M620 555H505M710 415L760 350" stroke="#F5F7FB" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="110" y="150" fill="#F5F7FB" font-family="Trebuchet MS, sans-serif" font-size="72" font-weight="700">ROAD</text>
+  <text x="110" y="218" fill="#F5F7FB" fill-opacity="0.72" font-family="Trebuchet MS, sans-serif" font-size="34">Fast cadence • long rides • endurance fit</text>
+</svg>

@@ -1,0 +1,10 @@
+<svg width="1200" height="800" viewBox="0 0 1200 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="800" rx="48" fill="#472B20"/>
+  <circle cx="930" cy="150" r="180" fill="#F5B88E" fill-opacity="0.2"/>
+  <path d="M0 640L150 580L320 520L520 470L760 430L1200 330V800H0V640Z" fill="#82503C"/>
+  <circle cx="350" cy="560" r="108" stroke="#FFF2E6" stroke-opacity="0.3" stroke-width="20"/>
+  <circle cx="780" cy="560" r="108" stroke="#FFF2E6" stroke-opacity="0.3" stroke-width="20"/>
+  <path d="M350 560L500 460H650L780 560M500 460L580 560M580 560L650 460M580 560H470M650 460L710 390M710 390H790M500 460L455 405" stroke="#FFF2E6" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="110" y="150" fill="#FFF2E6" font-family="Trebuchet MS, sans-serif" font-size="72" font-weight="700">BMX</text>
+  <text x="110" y="218" fill="#FFF2E6" fill-opacity="0.72" font-family="Trebuchet MS, sans-serif" font-size="34">Street setup • park tricks • compact wheels</text>
+</svg>

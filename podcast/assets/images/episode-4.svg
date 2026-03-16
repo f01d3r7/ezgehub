@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1200" fill="none">
+  <rect width="1200" height="1200" rx="72" fill="#11151D"/>
+  <rect x="56" y="56" width="1088" height="1088" rx="56" fill="url(#bg)"/>
+  <circle cx="270" cy="270" r="172" fill="#F59E0B" fill-opacity=".18"/>
+  <circle cx="942" cy="900" r="202" fill="#8B5CF6" fill-opacity=".2"/>
+  <rect x="222" y="268" width="756" height="520" rx="50" fill="#141922" stroke="#2F3645"/>
+  <rect x="298" y="346" width="604" height="364" rx="28" fill="#0F1115"/>
+  <path d="M374 628c70-120 150-182 240-182 68 0 120 26 190 98" stroke="url(#path)" stroke-width="26" stroke-linecap="round"/>
+  <circle cx="506" cy="514" r="32" fill="#F59E0B"/>
+  <circle cx="708" cy="514" r="32" fill="#8B5CF6"/>
+  <text x="208" y="884" fill="#8B5CF6" font-family="Arial, sans-serif" font-size="42" font-weight="700" letter-spacing="10">EP 04</text>
+  <text x="208" y="962" fill="#F5F5F5" font-family="Arial, sans-serif" font-size="78" font-weight="700">Quiet Tech</text>
+  <defs>
+    <linearGradient id="bg" x1="82" x2="1112" y1="90" y2="1110" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1A1D24"/>
+      <stop offset="1" stop-color="#13171F"/>
+    </linearGradient>
+    <linearGradient id="path" x1="374" x2="804" y1="628" y2="512" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F59E0B"/>
+      <stop offset="1" stop-color="#8B5CF6"/>
+    </linearGradient>
+  </defs>
+</svg>

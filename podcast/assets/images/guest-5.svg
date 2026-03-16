@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1000" fill="none">
+  <rect width="900" height="1000" rx="48" fill="#14171D"/>
+  <rect x="40" y="40" width="820" height="920" rx="38" fill="url(#bg)"/>
+  <circle cx="450" cy="312" r="154" fill="#F59E0B" fill-opacity=".18"/>
+  <circle cx="450" cy="318" r="104" fill="#F4D9BE"/>
+  <path d="M220 840c28-154 126-252 230-252s202 98 230 252" fill="#3A3045"/>
+  <path d="M338 284c36-52 104-84 182-66 34 8 66 30 94 66" stroke="#2C2336" stroke-width="30" stroke-linecap="round"/>
+  <text x="84" y="906" fill="#F5F5F5" font-family="Arial, sans-serif" font-size="54" font-weight="700">SOFYA VLASOVA</text>
+  <defs>
+    <linearGradient id="bg" x1="72" x2="816" y1="84" y2="928" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1B1F27"/>
+      <stop offset="1" stop-color="#151922"/>
+    </linearGradient>
+  </defs>
+</svg>

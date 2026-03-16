@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Контакты frontend/fullstack developer: способы связи, форма обратной связи и приглашение к сотрудничеству."
+    />
+    <title>Контакты | Ezge Portfolio Hub</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./portfolio-assets/css/main.css" />
+    <script src="./portfolio-assets/js/main.js" defer></script>
+  </head>
+  <body class="page page--inner">
+    <a class="skip-link" href="#main-content">Перейти к содержимому</a>
+
+    <header class="header" data-header>
+      <div class="container header__container">
+        <a class="header__logo" href="./index.html" aria-label="Ezge Portfolio Hub">
+          <span class="header__logo-mark">EZ</span>
+          <span class="header__logo-copy">
+            <strong>Ezge Portfolio Hub</strong>
+            <span>frontend / fullstack developer</span>
+          </span>
+        </a>
+
+        <button
+          class="header__toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="site-nav"
+          aria-label="Открыть меню"
+          data-menu-toggle
+        >
+          <span></span>
+          <span></span>
+        </button>
+
+        <div class="header__menu" id="site-nav" data-menu>
+          <nav class="nav header__nav" aria-label="Основная навигация">
+            <a class="nav__link" href="./index.html#projects">Проекты</a>
+            <a class="nav__link" href="./about.html">Обо мне</a>
+            <a class="nav__link" href="./contacts.html" aria-current="page">Контакты</a>
+          </nav>
+
+          <a class="button button--primary header__cta" href="#contact-form">Написать сейчас</a>
+        </div>
+      </div>
+    </header>
+
+    <main class="page__main" id="main-content">
+      <section class="hero hero--inner">
+        <div class="container hero__container hero__container--single">
+          <div class="hero__content" data-reveal>
+            <p class="hero__eyebrow">contacts</p>
+            <h1 class="hero__title">Открыт к новым задачам, freelance-проектам и предложениям по работе.</h1>
+            <p class="hero__text">
+              Если вам нужен frontend для лендинга, портфолио, промо-страницы или небольшого продукта, можно связаться
+              удобным способом ниже. Контактные значения сейчас оформлены как плейсхолдеры и легко заменяются.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-head" data-reveal>
+            <div>
+              <p class="section-head__eyebrow">ways to connect</p>
+              <h2 class="section-head__title">Быстрые точки входа в диалог.</h2>
+            </div>
+            <p class="section-head__text">
+              Подойдут как для обсуждения полноценного проекта, так и для короткого вопроса по доработке интерфейса.
+            </p>
+          </div>
+
+          <div class="contact-grid">
+            <article class="contact-card" data-reveal>
+              <p class="contact-card__label">Email</p>
+              <h3 class="contact-card__title">
+                <a href="mailto:ezge18@gmail.com">ezge18@gmail.com</a>
+              </h3>
+              <p class="contact-card__text">Подходит для подробных запросов, описания задачи, ТЗ и файлов со ссылками.</p>
+            </article>
+            <article class="contact-card" data-reveal>
+              <p class="contact-card__label">Telegram</p>
+              <h3 class="contact-card__title">
+                <a href="https://t.me/f01d3r7" target="_blank" rel="noreferrer">@f01d3r7</a>
+              </h3>
+              <p class="contact-card__text">Удобно для быстрых уточнений, обсуждения сроков и старта по короткому брифу.</p>
+            </article>
+            <article class="contact-card" data-reveal>
+              <p class="contact-card__label">GitHub</p>
+              <h3 class="contact-card__title">
+                <a href="https://github.com/f01d3r7" target="_blank" rel="noreferrer">f01d3r7</a>
+              </h3>
+              <p class="contact-card__text">Если удобно сначала посмотреть кодовую базу, демо или историю изменений.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container contacts-layout">
+          <div class="contacts-layout__side" data-reveal>
+            <article class="surface-card">
+              <p class="surface-card__eyebrow">Подход к работе</p>
+              <h2>Люблю ясные вводные и понятный ритм сотрудничества.</h2>
+              <p>
+                На старте удобно обсудить цель, сроки, референсы, объём страниц и то, где именно нужен мой фокус:
+                верстка, проектная структура, интерактивность, адаптив или финальная UI-полировка.
+              </p>
+            </article>
+
+            <article class="surface-card">
+              <p class="surface-card__eyebrow">Полезно прислать</p>
+              <ul class="info-list">
+                <li>ссылку на ТЗ или описание задачи</li>
+                <li>список обязательных страниц и сценариев</li>
+                <li>референсы по стилю, если они уже есть</li>
+                <li>желательный дедлайн и формат работы</li>
+              </ul>
+            </article>
+          </div>
+
+          <div class="contacts-layout__form" data-reveal>
+            <form class="form form--contact" id="contact-form" novalidate data-contact-form>
+              <div class="form__head">
+                <p class="form__eyebrow">contact form</p>
+                <h2 class="form__title">Можно оставить сообщение прямо на сайте.</h2>
+                <p class="form__text">
+                  Оставьте сообщение, и я помогу превратить вашу задачу в понятное и сильное цифровое решение.
+                </p>
+              </div>
+
+              <div class="form__grid">
+                <label class="form__field">
+                  <span class="form__label">Имя</span>
+                  <input class="form__input" type="text" name="name" autocomplete="name" data-field="name" />
+                  <span class="form__error" data-error-for="name"></span>
+                </label>
+
+                <label class="form__field">
+                  <span class="form__label">Email</span>
+                  <input class="form__input" type="email" name="email" autocomplete="email" data-field="email" />
+                  <span class="form__error" data-error-for="email"></span>
+                </label>
+
+                <label class="form__field form__field--full">
+                  <span class="form__label">Тип задачи</span>
+                  <select class="form__input form__input--select" name="projectType" data-field="projectType">
+                    <option value="">Выберите вариант</option>
+                    <option value="landing">Лендинг / промо-сайт</option>
+                    <option value="portfolio">Портфолио / личный сайт</option>
+                    <option value="mvp">MVP / каталог / интерфейс</option>
+                    <option value="support">Доработка существующего проекта</option>
+                  </select>
+                  <span class="form__error" data-error-for="projectType"></span>
+                </label>
+
+                <label class="form__field form__field--full">
+                  <span class="form__label">Сообщение</span>
+                  <textarea
+                    class="form__input form__input--textarea"
+                    name="message"
+                    rows="6"
+                    data-field="message"
+                  ></textarea>
+                  <span class="form__error" data-error-for="message"></span>
+                </label>
+              </div>
+
+              <div class="form__actions">
+                <button class="button button--primary button--large" type="submit">Отправить сообщение</button>
+                <p class="form__hint">Если удобнее, можно просто написать на email или в Telegram выше.</p>
+              </div>
+
+              <div class="form__success" role="status" aria-live="polite" data-form-success hidden>
+                Сообщение отправлено. Для быстрого ответа продублируйте запрос в Telegram.
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__container">
+        <div class="footer__brand">
+          <a class="footer__logo" href="./index.html">Ezge Portfolio Hub</a>
+          <p class="footer__text">Многостраничный portfolio-hub, где каждый проект — отдельный продукт с продуманной структурой, адаптивом и современной frontend-реализацией.</p>
+        </div>
+
+        <nav class="footer__nav" aria-label="Навигация по сайту">
+          <a href="./index.html#projects">Проекты</a>
+          <a href="./about.html">Обо мне</a>
+          <a href="./contacts.html" aria-current="page">Контакты</a>
+          <a href="./404.html">404</a>
+        </nav>
+
+        <div class="footer__contacts">
+          <a href="mailto:ezge18@gmail.com">ezge18@gmail.com</a>
+          <a href="https://t.me/f01d3r7" target="_blank" rel="noreferrer">Telegram</a>
+          <a href="https://github.com/f01d3r7" target="_blank" rel="noreferrer">GitHub</a>
+        </div>
+      </div>
+      <div class="container footer__bottom">
+        <p>© <span data-current-year></span> Ezge Portfolio Hub</p>
+        <p>Плейсхолдер-контакты легко заменить без изменения структуры страницы.</p>
+      </div>
+    </footer>
+  </body>
+</html>

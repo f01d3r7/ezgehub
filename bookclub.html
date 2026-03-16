@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta
+    name="description"
+    content="Лендинг книжного клуба с подборкой книг месяца, календарем встреч, отзывами и формой вступления."
+  >
+  <title>Litera Society — книжный клуб для тех, кто любит книги и разговоры о них</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  >
+  <link rel="stylesheet" href="./bookclub/style.css">
+</head>
+<body>
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="brand" href="#hero" aria-label="Litera Society">
+        <span class="brand-mark">LS</span>
+        <span class="brand-copy">
+          <strong>Litera Society</strong>
+          <small>книжный клуб</small>
+        </span>
+      </a>
+
+      <button
+        class="nav-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="site-nav"
+        aria-label="Открыть меню"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="site-nav" id="site-nav" aria-label="Основная навигация">
+        <a href="#about">О клубе</a>
+        <a href="#monthly-books">Книги месяца</a>
+        <a href="#testimonials">Отзывы</a>
+        <a href="#meetings-calendar">Календарь</a>
+        <a href="#benefits">Преимущества</a>
+        <a href="./index.html#projects">Портфолио</a>
+        <a href="#join-form" class="nav-cta">Вступить</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="hero">
+      <div class="hero-backdrop" aria-hidden="true">
+        <svg class="hero-art" viewBox="0 0 900 900" xmlns="http://www.w3.org/2000/svg" role="presentation">
+          <defs>
+            <linearGradient id="heroGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#f5efe6" stop-opacity="0.75" />
+              <stop offset="45%" stop-color="#d8cbb8" stop-opacity="0.2" />
+              <stop offset="100%" stop-color="#1f1a17" stop-opacity="0" />
+            </linearGradient>
+            <linearGradient id="heroShelf" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" stop-color="#6d3b47" stop-opacity="0.85" />
+              <stop offset="100%" stop-color="#7a8b5a" stop-opacity="0.9" />
+            </linearGradient>
+          </defs>
+          <circle cx="720" cy="220" r="210" fill="url(#heroGlow)" />
+          <rect x="130" y="280" width="450" height="16" rx="8" fill="#f5efe6" fill-opacity="0.22" />
+          <rect x="130" y="472" width="520" height="16" rx="8" fill="#f5efe6" fill-opacity="0.16" />
+          <rect x="160" y="168" width="46" height="112" rx="10" fill="url(#heroShelf)" />
+          <rect x="218" y="128" width="70" height="152" rx="12" fill="#d8cbb8" fill-opacity="0.86" />
+          <rect x="298" y="150" width="40" height="130" rx="10" fill="#7a8b5a" fill-opacity="0.85" />
+          <rect x="348" y="118" width="78" height="162" rx="12" fill="#6d3b47" fill-opacity="0.9" />
+          <rect x="438" y="144" width="44" height="136" rx="10" fill="#f5efe6" fill-opacity="0.72" />
+          <rect x="492" y="102" width="54" height="178" rx="12" fill="#d8cbb8" fill-opacity="0.65" />
+          <rect x="182" y="356" width="60" height="116" rx="12" fill="#f5efe6" fill-opacity="0.8" />
+          <rect x="254" y="330" width="44" height="142" rx="10" fill="#7a8b5a" fill-opacity="0.86" />
+          <rect x="310" y="346" width="82" height="126" rx="14" fill="#6d3b47" fill-opacity="0.88" />
+          <rect x="404" y="322" width="48" height="150" rx="10" fill="#d8cbb8" fill-opacity="0.72" />
+          <rect x="462" y="338" width="52" height="134" rx="12" fill="#f5efe6" fill-opacity="0.72" />
+          <rect x="526" y="298" width="64" height="174" rx="12" fill="#7a8b5a" fill-opacity="0.72" />
+          <path d="M684 560c0-34 25-56 58-56s58 22 58 56v10h-116v-10Z" fill="#f5efe6" fill-opacity="0.18" />
+          <path d="M706 520c0-18 13-30 28-30s28 12 28 30v18h-56v-18Z" fill="#f5efe6" fill-opacity="0.26" />
+          <path d="M675 598h138c22 0 40 18 40 40v16H635v-16c0-22 18-40 40-40Z" fill="#1f1a17" fill-opacity="0.55" />
+          <ellipse cx="744" cy="672" rx="116" ry="28" fill="#1f1a17" fill-opacity="0.28" />
+          <path d="M745 474c4-28 18-44 32-56" stroke="#f5efe6" stroke-opacity="0.22" stroke-width="8" stroke-linecap="round" />
+          <path d="M700 456c-12-20-14-38-10-58" stroke="#f5efe6" stroke-opacity="0.16" stroke-width="8" stroke-linecap="round" />
+        </svg>
+      </div>
+
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow hidden" data-reveal="up">Сообщество для вдумчивого чтения</p>
+          <h1 class="hidden" data-reveal="up" data-delay="0.1">
+            Клуб для тех, кто любит книги и разговоры о них
+          </h1>
+          <p class="hero-text hidden" data-reveal="up" data-delay="0.2">
+            Читаем вместе, обсуждаем глубже, открываем новые смыслы и находим близких по духу людей.
+            Здесь чтение становится не задачей, а красивым ритуалом и живым опытом.
+          </p>
+
+          <div class="hero-actions hidden" data-reveal="up" data-delay="0.3">
+            <a class="btn btn-primary" href="#monthly-books">Смотреть книги месяца</a>
+            <a class="btn btn-secondary" href="#join-form">Вступить в клуб</a>
+          </div>
+
+          <div class="hero-notes hidden" data-reveal="up" data-delay="0.4">
+            <div>
+              <strong>2 встречи</strong>
+              <span>каждый месяц в уютном ритме</span>
+            </div>
+            <div>
+              <strong>120+ участников</strong>
+              <span>с общим вкусом к разговорам и текстам</span>
+            </div>
+          </div>
+        </div>
+
+        <aside class="hero-panel hidden" data-reveal="left" data-delay="0.25">
+          <p class="panel-label">Ближайшая открытая встреча</p>
+          <h2 id="heroMeetingDate">19 марта, 19:30</h2>
+          <p class="panel-text" id="heroMeetingTheme">
+            Вечер для новых участников: говорим о том, как читать медленнее, замечать детали и не бояться
+            собственных интерпретаций.
+          </p>
+          <ul class="panel-list">
+            <li id="heroMeetingFormat">Формат: гибридно, онлайн + камерная офлайн-группа</li>
+            <li id="heroMeetingBook">Тема: как книга меняется после обсуждения</li>
+            <li id="heroMeetingSpots">Места: 8</li>
+          </ul>
+        </aside>
+      </div>
+
+      <a class="scroll-hint hidden" data-reveal="up" data-delay="0.55" href="#about" aria-label="Прокрутить к следующему блоку">
+        <span></span>
+        Листать вниз
+      </a>
+    </section>
+
+    <section class="section about" id="about">
+      <div class="container about-grid">
+        <div class="section-copy">
+          <p class="eyebrow hidden" data-reveal="up">О клубе</p>
+          <h2 class="hidden" data-reveal="up" data-delay="0.08">
+            Книжный клуб, где чтение превращается в разговор, атмосферу и привычку возвращаться к важному
+          </h2>
+          <p class="hidden" data-reveal="up" data-delay="0.16">
+            Этот клуб создан для людей, которым важно не только читать, но и делиться впечатлениями,
+            спорить о героях, находить новые интерпретации и превращать чтение в живой опыт.
+          </p>
+          <p class="hidden" data-reveal="up" data-delay="0.22">
+            Он подходит тем, кто любит красивую интеллектуальную среду, ищет регулярность без давления
+            и хочет чувствовать себя частью круга, где слушают, замечают и ценят мысль.
+          </p>
+
+          <div class="about-points">
+            <article class="point-card hidden" data-reveal="up" data-delay="0.05">
+              <span class="point-icon">01</span>
+              <h3>Совместное чтение</h3>
+              <p>Выбираем книги, к которым хочется возвращаться и перечитывать отдельные страницы.</p>
+            </article>
+            <article class="point-card hidden" data-reveal="up" data-delay="0.14">
+              <span class="point-icon">02</span>
+              <h3>Живые обсуждения</h3>
+              <p>Не пересказываем сюжет, а говорим о смыслах, интонации, памяти и личных откликах.</p>
+            </article>
+            <article class="point-card hidden" data-reveal="up" data-delay="0.23">
+              <span class="point-icon">03</span>
+              <h3>Встречи по расписанию</h3>
+              <p>Понятный ритм, заранее объявленные темы и комфортный формат для занятых людей.</p>
+            </article>
+          </div>
+        </div>
+
+        <figure class="about-visual hidden" data-reveal="zoom" data-delay="0.12">
+          <div class="about-visual-frame">
+            <svg viewBox="0 0 620 700" xmlns="http://www.w3.org/2000/svg" role="presentation">
+              <defs>
+                <linearGradient id="roomBg" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#f5efe6" />
+                  <stop offset="100%" stop-color="#d8cbb8" />
+                </linearGradient>
+                <linearGradient id="chairShade" x1="0%" y1="0%" x2="0%" y2="100%">
+                  <stop offset="0%" stop-color="#6d3b47" />
+                  <stop offset="100%" stop-color="#3f232b" />
+                </linearGradient>
+              </defs>
+              <rect x="0" y="0" width="620" height="700" rx="48" fill="url(#roomBg)" />
+              <rect x="94" y="82" width="176" height="294" rx="26" fill="#1f1a17" fill-opacity="0.1" />
+              <rect x="120" y="108" width="124" height="242" rx="20" fill="#f5efe6" fill-opacity="0.55" />
+              <rect x="318" y="120" width="208" height="22" rx="11" fill="#1f1a17" fill-opacity="0.16" />
+              <rect x="318" y="238" width="182" height="22" rx="11" fill="#1f1a17" fill-opacity="0.12" />
+              <rect x="332" y="154" width="32" height="84" rx="8" fill="#6d3b47" />
+              <rect x="372" y="128" width="54" height="110" rx="8" fill="#7a8b5a" />
+              <rect x="434" y="142" width="30" height="96" rx="8" fill="#d8cbb8" />
+              <rect x="470" y="118" width="42" height="120" rx="8" fill="#f5efe6" />
+              <rect x="330" y="270" width="44" height="110" rx="8" fill="#f5efe6" />
+              <rect x="382" y="290" width="56" height="90" rx="8" fill="#6d3b47" />
+              <rect x="446" y="256" width="30" height="124" rx="8" fill="#7a8b5a" />
+              <path d="M132 570c0-66 48-106 108-106s108 40 108 106v34H132v-34Z" fill="url(#chairShade)" />
+              <rect x="118" y="576" width="262" height="82" rx="32" fill="#6d3b47" />
+              <rect x="272" y="434" width="180" height="34" rx="17" fill="#1f1a17" fill-opacity="0.12" />
+              <rect x="290" y="468" width="142" height="18" rx="9" fill="#1f1a17" fill-opacity="0.08" />
+              <ellipse cx="362" cy="504" rx="124" ry="28" fill="#1f1a17" fill-opacity="0.08" />
+              <circle cx="186" cy="208" r="26" fill="#d8cbb8" fill-opacity="0.85" />
+              <circle cx="186" cy="208" r="12" fill="#f5efe6" />
+            </svg>
+          </div>
+          <figcaption>
+            Здесь не нужно быть литературоведом. Достаточно желания читать внимательнее и встречаться
+            с людьми, которым книги тоже важны.
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section books" id="monthly-books">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow hidden" data-reveal="up">Подборка месяца</p>
+            <h2 class="hidden" data-reveal="up" data-delay="0.08">Книги, которые мы читаем, обсуждаем и проживаем вместе</h2>
+          </div>
+          <p class="section-summary hidden" data-reveal="up" data-delay="0.16">
+            В подборке есть громкие классические тексты и книги, о которых хочется говорить тихо и долго.
+            Наведите на карточку, чтобы почувствовать тон будущего разговора.
+          </p>
+        </div>
+
+        <div class="books-carousel hidden" data-reveal="up" data-delay="0.12">
+          <button class="carousel-btn carousel-btn-prev" type="button" aria-label="Показать предыдущие книги">
+            <span>&larr;</span>
+          </button>
+
+          <div class="books-viewport" id="books-viewport" tabindex="0" aria-label="Карусель книг месяца">
+            <div class="books-track">
+              <article class="book-card">
+                <div class="book-cover cover-1984">
+                  <span class="book-tag">Книга месяца</span>
+                  <div class="cover-copy">
+                    <small>George Orwell</small>
+                    <strong>1984</strong>
+                  </div>
+                  <div class="cover-overlay">
+                    <p>Роман о власти, языке и том, как легко потерять внутреннюю свободу.</p>
+                  </div>
+                </div>
+                <div class="book-body">
+                  <div class="book-meta">
+                    <span>Антиутопия</span>
+                    <span>Обсуждаем в клубе</span>
+                  </div>
+                  <h3>1984</h3>
+                  <p class="book-author">Джордж Оруэлл</p>
+                  <p class="book-description">
+                    Читаем как роман о страхе, языке и личном сопротивлении, которое не всегда выглядит героически.
+                  </p>
+                </div>
+              </article>
+
+              <article class="book-card">
+                <div class="book-cover cover-life">
+                  <span class="book-tag">Выбор участников</span>
+                  <div class="cover-copy">
+                    <small>Hanya Yanagihara</small>
+                    <strong>Маленькая жизнь</strong>
+                  </div>
+                  <div class="cover-overlay">
+                    <p>Большой и очень хрупкий роман о дружбе, памяти, боли и близости.</p>
+                  </div>
+                </div>
+                <div class="book-body">
+                  <div class="book-meta">
+                    <span>Современная проза</span>
+                    <span>Глубокое чтение</span>
+                  </div>
+                  <h3>Маленькая жизнь</h3>
+                  <p class="book-author">Ханья Янагихара</p>
+                  <p class="book-description">
+                    Обсуждаем, почему книга вызывает сильнейший эмоциональный отклик и где проходит граница сострадания.
+                  </p>
+                </div>
+              </article>
+
+              <article class="book-card">
+                <div class="book-cover cover-451">
+                  <span class="book-tag">Обсуждаем в клубе</span>
+                  <div class="cover-copy">
+                    <small>Ray Bradbury</small>
+                    <strong>451&deg; по Фаренгейту</strong>
+                  </div>
+                  <div class="cover-overlay">
+                    <p>Текст о ценности памяти, диалога и внутреннего огня, который нельзя погасить.</p>
+                  </div>
+                </div>
+                <div class="book-body">
+                  <div class="book-meta">
+                    <span>Фантастика</span>
+                    <span>Ближайшая встреча</span>
+                  </div>
+                  <h3>451&deg; по Фаренгейту</h3>
+                  <p class="book-author">Рэй Брэдбери</p>
+                  <p class="book-description">
+                    Разбираем, как книга говорит о культуре, внимании и праве на сложный внутренний мир.
+                  </p>
+                </div>
+              </article>
+
+              <article class="book-card">
+                <div class="book-cover cover-master">
+                  <span class="book-tag">Классика месяца</span>
+                  <div class="cover-copy">
+                    <small>Mikhail Bulgakov</small>
+                    <strong>Мастер и Маргарита</strong>
+                  </div>
+                  <div class="cover-overlay">
+                    <p>Ирония, мистицизм и разговор о свободе автора, любви и трусости.</p>
+                  </div>
+                </div>
+                <div class="book-body">
+                  <div class="book-meta">
+                    <span>Классика</span>
+                    <span>Смысловые слои</span>
+                  </div>
+                  <h3>Мастер и Маргарита</h3>
+                  <p class="book-author">Михаил Булгаков</p>
+                  <p class="book-description">
+                    Читаем не только сюжет, но и ритм, сатиру, подтекст и внутреннюю свободу персонажей.
+                  </p>
+                </div>
+              </article>
+
+              <article class="book-card">
+                <div class="book-cover cover-forest">
+                  <span class="book-tag">Выбор участников</span>
+                  <div class="cover-copy">
+                    <small>Haruki Murakami</small>
+                    <strong>Норвежский лес</strong>
+                  </div>
+                  <div class="cover-overlay">
+                    <p>Роман о тишине, потерях и той нежности, которую трудно выразить прямо.</p>
+                  </div>
+                </div>
+                <div class="book-body">
+                  <div class="book-meta">
+                    <span>Психологическая проза</span>
+                    <span>Читаем медленно</span>
+                  </div>
+                  <h3>Норвежский лес</h3>
+                  <p class="book-author">Харуки Мураками</p>
+                  <p class="book-description">
+                    Ищем, как музыка, паузы и недосказанность создают особую эмоциональную оптику книги.
+                  </p>
+                </div>
+              </article>
+
+              <article class="book-card">
+                <div class="book-cover cover-rye">
+                  <span class="book-tag">Обсуждаем в клубе</span>
+                  <div class="cover-copy">
+                    <small>J. D. Salinger</small>
+                    <strong>Над пропастью во ржи</strong>
+                  </div>
+                  <div class="cover-overlay">
+                    <p>Книга о хрупкости, одиночестве и упрямом желании остаться настоящим.</p>
+                  </div>
+                </div>
+                <div class="book-body">
+                  <div class="book-meta">
+                    <span>Роман взросления</span>
+                    <span>Живой разговор</span>
+                  </div>
+                  <h3>Над пропастью во ржи</h3>
+                  <p class="book-author">Дж. Д. Сэлинджер</p>
+                  <p class="book-description">
+                    Смотрим, почему голос героя до сих пор звучит остро и узнаваемо для разных поколений.
+                  </p>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <button class="carousel-btn carousel-btn-next" type="button" aria-label="Показать следующие книги">
+            <span>&rarr;</span>
+          </button>
+        </div>
+
+        <div class="carousel-status hidden" data-reveal="up" data-delay="0.18">
+          <span class="status-dot"></span>
+          В клубе мы читаем 1-2 основные книги и даем дополнительную рекомендацию для тех, кто хочет погрузиться глубже.
+        </div>
+      </div>
+    </section>
+
+    <section class="section testimonials" id="testimonials">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow hidden" data-reveal="up">Отзывы участников</p>
+            <h2 class="hidden" data-reveal="up" data-delay="0.08">Что меняется, когда книга становится поводом для настоящей встречи</h2>
+          </div>
+          <p class="section-summary hidden" data-reveal="up" data-delay="0.16">
+            Люди приходят за чтением, а остаются ради редкого ощущения: тебя здесь действительно слушают.
+          </p>
+        </div>
+
+        <div class="testimonials-grid">
+          <article class="testimonial-card hidden" data-reveal="up" data-delay="0.04">
+            <span class="quote-mark">“</span>
+            <p>Я снова начал читать регулярно именно благодаря клубу. Здесь у книг появляется ритм и смысл, которого не хватает в одиночку.</p>
+            <div class="testimonial-author">
+              <strong>Илья</strong>
+              <span>участник клуба 6 месяцев</span>
+            </div>
+          </article>
+
+          <article class="testimonial-card hidden" data-reveal="up" data-delay="0.12">
+            <span class="quote-mark">“</span>
+            <p>Обсуждения здесь глубже, чем я ожидала. После встреч книга раскрывается заново, будто я читаю ее второй раз, но уже внимательнее.</p>
+            <div class="testimonial-author">
+              <strong>Марина</strong>
+              <span>участница клуба 1 год</span>
+            </div>
+          </article>
+
+          <article class="testimonial-card hidden" data-reveal="up" data-delay="0.2">
+            <span class="quote-mark">“</span>
+            <p>Это не просто клуб, а сообщество людей, с которыми приятно думать и спорить. Очень редкое чувство спокойного интеллектуального тепла.</p>
+            <div class="testimonial-author">
+              <strong>Александр</strong>
+              <span>участник клуба 8 месяцев</span>
+            </div>
+          </article>
+
+          <article class="testimonial-card hidden" data-reveal="up" data-delay="0.28">
+            <span class="quote-mark">“</span>
+            <p>Мне нравится, что сюда можно прийти без академической подготовки. Никто не оценивает, но после каждой встречи думаешь немного точнее.</p>
+            <div class="testimonial-author">
+              <strong>Екатерина</strong>
+              <span>участница открытых встреч</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section calendar-section" id="meetings-calendar">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow hidden" data-reveal="up">Календарь встреч</p>
+            <h2 class="hidden" data-reveal="up" data-delay="0.08">Клуб живет по ритму встреч, а не по обещаниям когда-нибудь начать читать</h2>
+          </div>
+          <p class="section-summary hidden" data-reveal="up" data-delay="0.16">
+            Отмечайте даты, выбирайте формат и смотрите, что будет происходить в ближайшие недели.
+          </p>
+        </div>
+
+        <div class="calendar-layout">
+          <div class="calendar-widget hidden" data-reveal="up" data-delay="0.06">
+            <div class="calendar-toolbar">
+              <button class="calendar-nav" id="prev-month" type="button" aria-label="Предыдущий месяц">&larr;</button>
+              <div>
+                <p class="calendar-label">Расписание клуба</p>
+                <h3 id="calendar-month-label">Март 2026</h3>
+              </div>
+              <button class="calendar-nav" id="next-month" type="button" aria-label="Следующий месяц">&rarr;</button>
+            </div>
+
+            <div class="calendar-weekdays" aria-hidden="true">
+              <span>Пн</span>
+              <span>Вт</span>
+              <span>Ср</span>
+              <span>Чт</span>
+              <span>Пт</span>
+              <span>Сб</span>
+              <span>Вс</span>
+            </div>
+
+            <div class="calendar-grid" id="calendar-grid"></div>
+          </div>
+
+          <aside class="event-panel hidden" data-reveal="left" data-delay="0.14">
+            <p class="eyebrow">Детали встречи</p>
+            <div class="event-details" id="event-details">
+              <div class="event-empty">
+                <strong>Выберите дату с подсветкой</strong>
+                <p>Мы покажем тему встречи, книгу, время и формат участия.</p>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="section benefits" id="benefits">
+      <div class="container">
+        <div class="section-head benefits-head">
+          <div>
+            <p class="eyebrow hidden" data-reveal="up">Как проходят встречи</p>
+            <h2 class="hidden" data-reveal="up" data-delay="0.08">Вступить легко, даже если вы давно не были в книжном сообществе</h2>
+          </div>
+          <p class="section-summary hidden" data-reveal="up" data-delay="0.16">
+            Мы строим встречи так, чтобы в них было и содержание, и пространство для живого разговора без напряжения.
+          </p>
+        </div>
+
+        <div class="benefits-grid">
+          <article class="benefit-card hidden" data-reveal="up" data-delay="0.05">
+            <span class="benefit-icon">📚</span>
+            <h3>Читаем одну или несколько книг в месяц</h3>
+            <p>Основной выбор всегда понятен заранее, а дополнительные рекомендации помогают не останавливаться на одной теме.</p>
+          </article>
+
+          <article class="benefit-card hidden" data-reveal="up" data-delay="0.13">
+            <span class="benefit-icon">🗓</span>
+            <h3>Встречаемся по расписанию</h3>
+            <p>Регулярность помогает читать спокойнее и не откладывать важные разговоры на потом.</p>
+          </article>
+
+          <article class="benefit-card hidden" data-reveal="up" data-delay="0.21">
+            <span class="benefit-icon">☕</span>
+            <h3>Обсуждаем без формальностей</h3>
+            <p>У нас нет экзамена по литературе. Есть внимание к тексту, личный опыт и уважение к разным взглядам.</p>
+          </article>
+
+          <article class="benefit-card hidden" data-reveal="up" data-delay="0.29">
+            <span class="benefit-icon">✨</span>
+            <h3>Можно присоединиться без большого читательского опыта</h3>
+            <p>Если вы давно хотели вернуться к книгам, клуб даст мягкий вход и живую поддержку без давления.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section join-section" id="join-form">
+      <div class="container join-grid">
+        <div class="join-copy">
+          <p class="eyebrow hidden" data-reveal="up">Вступление в клуб</p>
+          <h2 class="hidden" data-reveal="up" data-delay="0.08">Присоединяйтесь к сообществу, где ценят мысли, слова и живой разговор</h2>
+          <p class="hidden" data-reveal="up" data-delay="0.16">
+            Присоединяйтесь к клубу, чтобы читать регулярно, обсуждать книги глубже и стать частью сообщества,
+            где у текста всегда есть второе дыхание после встречи.
+          </p>
+
+          <div class="join-benefits hidden" data-reveal="up" data-delay="0.24">
+            <div class="join-chip">Доступ к закрытым встречам</div>
+            <div class="join-chip">Анонсы новых подборок</div>
+            <div class="join-chip" id="joinMeetingChip">Открытая встреча 19 марта</div>
+          </div>
+
+          <div class="join-note hidden" data-reveal="up" data-delay="0.32" id="joinMeetingNote">
+            <strong>Ближайшая открытая встреча:</strong>
+            19 марта в 19:30. Тема вечера: «Почему книга раскрывается только после разговора».
+          </div>
+        </div>
+
+        <div class="form-card hidden" data-reveal="left" data-delay="0.16">
+          <form class="join-form" id="joinClubForm" novalidate>
+            <div class="form-grid">
+              <label class="field" data-field="name">
+                <span>Имя</span>
+                <input type="text" name="name" placeholder="Как к вам обращаться">
+                <small class="field-error"></small>
+              </label>
+
+              <label class="field" data-field="email">
+                <span>Email</span>
+                <input type="email" name="email" placeholder="you@example.com">
+                <small class="field-error"></small>
+              </label>
+
+              <label class="field" data-field="contact">
+                <span>Телефон или Telegram</span>
+                <input type="text" name="contact" placeholder="+7 или @nickname">
+                <small class="field-error"></small>
+              </label>
+
+              <label class="field" data-field="genre">
+                <span>Любимый жанр</span>
+                <input type="text" name="genre" placeholder="Например, современная проза">
+                <small class="field-error"></small>
+              </label>
+
+              <fieldset class="field field-full fieldset" data-field="format">
+                <legend>Формат участия</legend>
+                <div class="choice-group">
+                  <label class="choice">
+                    <input type="radio" name="format" value="Онлайн">
+                    <span>Онлайн</span>
+                  </label>
+                  <label class="choice">
+                    <input type="radio" name="format" value="Офлайн">
+                    <span>Офлайн</span>
+                  </label>
+                  <label class="choice">
+                    <input type="radio" name="format" value="Любой">
+                    <span>Любой</span>
+                  </label>
+                </div>
+                <small class="field-error"></small>
+              </fieldset>
+
+              <label class="field field-full" data-field="comment">
+                <span>Комментарий</span>
+                <textarea name="comment" rows="4" placeholder="Что вы любите читать и какого формата общения ждете?"></textarea>
+                <small class="field-error"></small>
+              </label>
+            </div>
+
+            <button class="btn btn-primary form-submit" type="submit">Вступить в клуб</button>
+
+            <div class="form-success" id="formSuccess" aria-live="polite">
+              <strong>Заявка отправлена.</strong>
+              <p>Мы напишем вам с деталями ближайшей встречи и подскажем, с какой книги лучше начать.</p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <a class="brand brand-footer" href="#hero">
+          <span class="brand-mark">LS</span>
+          <span class="brand-copy">
+            <strong>Litera Society</strong>
+            <small>книжный клуб для вдумчивых разговоров</small>
+          </span>
+        </a>
+      </div>
+      <p>Читаем вместе, обсуждаем глубже, встречаемся регулярно.</p>
+    </div>
+  </footer>
+
+  <script src="./bookclub/script.js"></script>
+</body>
+</html>

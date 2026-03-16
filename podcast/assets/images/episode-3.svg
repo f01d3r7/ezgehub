@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1200" fill="none">
+  <rect width="1200" height="1200" rx="72" fill="#11151D"/>
+  <rect x="56" y="56" width="1088" height="1088" rx="56" fill="url(#bg)"/>
+  <circle cx="920" cy="240" r="182" fill="#8B5CF6" fill-opacity=".22"/>
+  <circle cx="236" cy="950" r="176" fill="#F59E0B" fill-opacity=".12"/>
+  <path d="M264 740c70-176 180-352 336-352 120 0 214 100 214 230 0 108-54 208-164 314" stroke="url(#path)" stroke-width="38" stroke-linecap="round"/>
+  <circle cx="816" cy="936" r="60" fill="#8B5CF6"/>
+  <circle cx="756" cy="876" r="26" fill="#F59E0B"/>
+  <circle cx="656" cy="540" r="54" fill="#F5F5F5" fill-opacity=".1"/>
+  <text x="188" y="876" fill="#F59E0B" font-family="Arial, sans-serif" font-size="42" font-weight="700" letter-spacing="10">EP 03</text>
+  <text x="188" y="956" fill="#F5F5F5" font-family="Arial, sans-serif" font-size="82" font-weight="700">Build Rhythm</text>
+  <defs>
+    <linearGradient id="bg" x1="92" x2="1108" y1="96" y2="1112" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1A1D24"/>
+      <stop offset="1" stop-color="#131720"/>
+    </linearGradient>
+    <linearGradient id="path" x1="264" x2="850" y1="740" y2="920" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F59E0B"/>
+      <stop offset="1" stop-color="#8B5CF6"/>
+    </linearGradient>
+  </defs>
+</svg>

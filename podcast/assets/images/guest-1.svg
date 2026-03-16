@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1000" fill="none">
+  <rect width="900" height="1000" rx="48" fill="#14171D"/>
+  <rect x="40" y="40" width="820" height="920" rx="38" fill="url(#bg)"/>
+  <circle cx="450" cy="326" r="148" fill="#F59E0B" fill-opacity=".26"/>
+  <circle cx="450" cy="324" r="102" fill="#F1D7B2"/>
+  <path d="M230 834c34-150 126-244 220-244s186 94 220 244" fill="#2C3442"/>
+  <path d="M350 322c36-62 112-92 182-78 24 4 48 16 70 34" stroke="#222A37" stroke-width="28" stroke-linecap="round"/>
+  <text x="84" y="906" fill="#F5F5F5" font-family="Arial, sans-serif" font-size="54" font-weight="700">ANNA PETROVA</text>
+  <defs>
+    <linearGradient id="bg" x1="72" x2="816" y1="84" y2="928" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1B1F27"/>
+      <stop offset="1" stop-color="#151922"/>
+    </linearGradient>
+  </defs>
+</svg>

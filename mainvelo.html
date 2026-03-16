@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VeloShop — велосипеды для города, трассы и трейла</title>
+    <link rel="stylesheet" href="./veloshop/css/reset.css">
+    <link rel="stylesheet" href="./veloshop/css/variables.css">
+    <link rel="stylesheet" href="./veloshop/css/main.css">
+    <link rel="stylesheet" href="./veloshop/css/index.css">
+    <script type="module" src="./veloshop/js/index.js"></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container site-header__inner">
+        <a class="logo" href="./mainvelo.html">VeloShop</a>
+        <nav class="site-nav" aria-label="Основная навигация">
+          <a href="#categories">Категории</a>
+          <a href="#featured">Популярное</a>
+          <a href="#promo">Акции</a>
+          <a href="./catalog.html">Каталог</a>
+          <a href="./index.html#projects">Портфолио</a>
+        </nav>
+        <div class="site-header__actions">
+          <button class="icon-button" type="button" id="compare-open-btn" data-action="open-compare">
+            Сравнение
+            <span class="counter-chip" data-compare-counter>0</span>
+          </button>
+          <button class="icon-button icon-button--accent" type="button" id="cart-open-btn" data-action="open-cart">
+            Корзина
+            <span class="counter-chip" data-cart-counter>0</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero section">
+        <div class="container hero__layout">
+          <div class="hero__content">
+            <p class="eyebrow">Frontend MVP веломагазина</p>
+            <h1>Велосипеды, которые выглядят быстро еще до первого заезда</h1>
+            <p class="hero__text">
+              Подберите городской, шоссейный, трейловый или электрический байк,
+              сравните характеристики и соберите собственную корзину без лишних
+              переходов.
+            </p>
+            <div class="hero__actions">
+              <a class="btn btn--primary" href="./catalog.html">Перейти в каталог</a>
+              <a class="btn btn--ghost" href="#promo">Смотреть акции</a>
+            </div>
+            <ul class="hero__stats">
+              <li>
+                <strong>12</strong>
+                <span>готовых моделей в MVP</span>
+              </li>
+              <li>
+                <strong>5</strong>
+                <span>категорий для быстрого старта</span>
+              </li>
+              <li>
+                <strong>3</strong>
+                <span>позиции в сравнении одновременно</span>
+              </li>
+            </ul>
+          </div>
+          <div class="hero__visual">
+            <div class="hero__card hero__card--large">
+              <p>Trail Ready</p>
+              <strong>Trek Marlin 7</strong>
+              <span>29", hydraulic disc, aluminum</span>
+            </div>
+            <div class="hero__card hero__card--accent">
+              <p>Urban Commute</p>
+              <strong>Cannondale Quick 3</strong>
+              <span>Light build, fast city geometry</span>
+            </div>
+            <div class="hero__bike-mark"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="advantages section">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Почему этот формат удобен</p>
+            <h2>Главная страница ведет к покупке, а не просто заполняет экран</h2>
+          </div>
+          <div class="advantages__grid">
+            <article class="feature-card card">
+              <span class="feature-card__index">01</span>
+              <h3>Четкая навигация</h3>
+              <p>Категории ведут сразу в каталог с уже активным фильтром.</p>
+            </article>
+            <article class="feature-card card">
+              <span class="feature-card__index">02</span>
+              <h3>Быстрое сравнение</h3>
+              <p>До трех моделей в модальном окне без переключений между страницами.</p>
+            </article>
+            <article class="feature-card card">
+              <span class="feature-card__index">03</span>
+              <h3>Локальная корзина</h3>
+              <p>Состояние не теряется после перезагрузки благодаря localStorage.</p>
+            </article>
+            <article class="feature-card card">
+              <span class="feature-card__index">04</span>
+              <h3>Готово к росту</h3>
+              <p>Модульная структура позволит без боли добавить API и карточки товара.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="categories section" id="categories">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Категории</p>
+            <h2>Выберите направление и сразу попадите в нужную подборку</h2>
+          </div>
+          <div class="categories__grid">
+            <a class="category-card category-card--mountain" href="./catalog.html?type=mountain">
+              <span class="category-card__label">Горные</span>
+              <strong>Трейл, грунт, лесные маршруты</strong>
+            </a>
+            <a class="category-card category-card--road" href="./catalog.html?type=road">
+              <span class="category-card__label">Шоссейные</span>
+              <strong>Скорость, фитнес и длинные дистанции</strong>
+            </a>
+            <a class="category-card category-card--city" href="./catalog.html?type=city">
+              <span class="category-card__label">Городские</span>
+              <strong>Повседневный комфорт и быстрые поездки</strong>
+            </a>
+            <a class="category-card category-card--bmx" href="./catalog.html?type=bmx">
+              <span class="category-card__label">BMX</span>
+              <strong>Стрит, парк и базовые трюки</strong>
+            </a>
+            <a class="category-card category-card--electric" href="./catalog.html?type=electric">
+              <span class="category-card__label">Электро</span>
+              <strong>Ассистент на подъемах и дальних маршрутах</strong>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="featured section" id="featured">
+        <div class="container">
+          <div class="section-heading section-heading--split">
+            <div>
+              <p class="eyebrow">Популярные модели</p>
+              <h2>Карточки на главной уже подключены к общей бизнес-логике</h2>
+            </div>
+            <a class="btn btn--secondary" href="./catalog.html">Открыть весь каталог</a>
+          </div>
+          <div class="products-grid products-grid--featured" id="featured-products"></div>
+        </div>
+      </section>
+
+      <section class="promo-banner section" id="promo">
+        <div class="container">
+          <div class="promo-banner__content">
+            <p class="eyebrow">Сезонная акция</p>
+            <h2>Соберите стартовый набор для нового сезона и сэкономьте на первой покупке</h2>
+            <p>
+              В каталоге уже отмечены промо-модели. Используйте сортировку,
+              сравните велосипеды и добавьте подходящий вариант в корзину.
+            </p>
+            <a class="btn btn--primary" href="./catalog.html">Смотреть предложения</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="final-cta section">
+        <div class="container">
+          <div class="final-cta__panel card">
+            <p class="eyebrow">Готово к выбору</p>
+            <h2>Откройте каталог и пройдите основной пользовательский сценарий целиком</h2>
+            <p>
+              Фильтрация, сортировка, сравнение и корзина уже задуманы как части
+              единой фронтенд-системы, а не как набор случайных блоков.
+            </p>
+            <a class="btn btn--primary" href="./catalog.html">Открыть каталог</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <aside class="cart-drawer" id="cart-drawer" aria-hidden="true">
+      <button class="cart-drawer__backdrop" type="button" data-action="close-cart" aria-label="Закрыть корзину"></button>
+      <div class="cart-drawer__panel">
+        <div class="cart-drawer__header">
+          <div>
+            <p class="eyebrow">Корзина</p>
+            <h2>Выбранные модели</h2>
+          </div>
+          <button class="icon-button icon-button--ghost" type="button" data-action="close-cart">Закрыть</button>
+        </div>
+        <div class="cart-drawer__body" id="cart-items"></div>
+        <div class="cart-summary">
+          <div class="cart-summary__row">
+            <span>Итого</span>
+            <strong id="cart-total">0 $</strong>
+          </div>
+          <button class="btn btn--primary btn--wide" type="button" data-action="checkout">Оформить</button>
+        </div>
+      </div>
+    </aside>
+
+    <div class="compare-modal" id="compare-modal" aria-hidden="true">
+      <button class="compare-modal__backdrop" type="button" data-action="close-compare" aria-label="Закрыть сравнение"></button>
+      <div class="compare-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="compare-title">
+        <div class="compare-modal__header">
+          <div>
+            <p class="eyebrow">Сравнение</p>
+            <h2 id="compare-title">Сравните ключевые характеристики</h2>
+          </div>
+          <button class="icon-button icon-button--ghost" type="button" data-action="close-compare">Закрыть</button>
+        </div>
+        <div class="compare-modal__content" id="compare-content"></div>
+      </div>
+    </div>
+
+    <footer class="site-footer">
+      <div class="container site-footer__inner">
+        <div>
+          <a class="logo" href="./mainvelo.html">VeloShop</a>
+          <p>Frontend MVP веломагазина с каталогом, сравнением и локальной корзиной.</p>
+        </div>
+        <p>&copy; <span data-current-year></span> VeloShop</p>
+      </div>
+    </footer>
+  </body>
+</html>

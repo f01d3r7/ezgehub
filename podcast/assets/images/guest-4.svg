@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1000" fill="none">
+  <rect width="900" height="1000" rx="48" fill="#14171D"/>
+  <rect x="40" y="40" width="820" height="920" rx="38" fill="url(#bg)"/>
+  <circle cx="450" cy="318" r="150" fill="#8B5CF6" fill-opacity=".22"/>
+  <circle cx="450" cy="322" r="102" fill="#E6C39E"/>
+  <path d="M216 834c34-148 132-246 234-246s200 98 234 246" fill="#283441"/>
+  <path d="M336 280c60-72 182-96 268-18" stroke="#212A36" stroke-width="32" stroke-linecap="round"/>
+  <text x="84" y="906" fill="#F5F5F5" font-family="Arial, sans-serif" font-size="54" font-weight="700">KIRILL ORLOV</text>
+  <defs>
+    <linearGradient id="bg" x1="72" x2="816" y1="84" y2="928" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1A1E26"/>
+      <stop offset="1" stop-color="#141922"/>
+    </linearGradient>
+  </defs>
+</svg>

@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Обо мне: специализация, подход к разработке, стек технологий и принципы работы frontend/fullstack developer."
+    />
+    <title>Обо мне | Ezge Portfolio Hub</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./portfolio-assets/css/main.css" />
+    <script src="./portfolio-assets/js/main.js" defer></script>
+  </head>
+  <body class="page page--inner">
+    <a class="skip-link" href="#main-content">Перейти к содержимому</a>
+
+    <header class="header" data-header>
+      <div class="container header__container">
+        <a class="header__logo" href="./index.html" aria-label="Ezge Portfolio Hub">
+          <span class="header__logo-mark">EZ</span>
+          <span class="header__logo-copy">
+            <strong>Ezge Portfolio Hub</strong>
+            <span>frontend / fullstack developer</span>
+          </span>
+        </a>
+
+        <button
+          class="header__toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="site-nav"
+          aria-label="Открыть меню"
+          data-menu-toggle
+        >
+          <span></span>
+          <span></span>
+        </button>
+
+        <div class="header__menu" id="site-nav" data-menu>
+          <nav class="nav header__nav" aria-label="Основная навигация">
+            <a class="nav__link" href="./index.html#projects">Проекты</a>
+            <a class="nav__link" href="./about.html" aria-current="page">Обо мне</a>
+            <a class="nav__link" href="./contacts.html">Контакты</a>
+          </nav>
+
+          <a class="button button--primary header__cta" href="./contacts.html">Связаться</a>
+        </div>
+      </div>
+    </header>
+
+    <main class="page__main" id="main-content">
+      <section class="hero hero--inner">
+        <div class="container hero__container hero__container--single">
+          <div class="hero__content" data-reveal>
+            <p class="hero__eyebrow">about the developer</p>
+            <h1 class="hero__title">Frontend с вниманием к системе, качеству реализации и пользовательскому сценарию.</h1>
+            <p class="hero__text">
+              Мне интересны проекты, где интерфейс должен быть не просто красивым, а убедительным в деталях:
+              семантика, адаптив, фокус-состояния, ритм типографики, чистая структура файлов и спокойная логика
+              взаимодействий.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container about-block">
+          <div class="about-block__content" data-reveal>
+            <p class="section-head__eyebrow">позиционирование</p>
+            <h2 class="about-block__title">
+              Специализируюсь на лендингах, промо-сайтах и интерфейсах, где важны подача и стабильность.
+            </h2>
+            <p class="about-block__text">
+              Сильнее всего чувствую себя в задачах, где нужно собрать единый visual language, выдержать сетку на
+              всех брейкпоинтах и сделать интерфейс понятным без лишней сложности. Умею работать с многостраничной
+              структурой, поддерживать БЭМ-архитектуру и раскладывать проект так, чтобы с ним было удобно жить дальше.
+            </p>
+          </div>
+
+          <div class="about-block__cards" data-reveal>
+            <article class="surface-card">
+              <p class="surface-card__eyebrow">Специализация</p>
+              <h3>Frontend / UI implementation</h3>
+              <p>Лендинги, витрины проектов, маркетинговые страницы, небольшие каталоги и интерактивные страницы продукта.</p>
+            </article>
+            <article class="surface-card">
+              <p class="surface-card__eyebrow">Фокус в работе</p>
+              <h3>Чистая структура</h3>
+              <p>Переменные, повторно используемые блоки, понятные связи между страницами и отсутствие хаоса в файлах.</p>
+            </article>
+            <article class="surface-card">
+              <p class="surface-card__eyebrow">Результат</p>
+              <h3>Интерфейс, который приятно показывать</h3>
+              <p>Делаю акцент на том, чтобы сайт выглядел собранным продуктом, а не набором случайных секций.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-head" data-reveal>
+            <div>
+              <p class="section-head__eyebrow">process</p>
+              <h2 class="section-head__title">Как подхожу к разработке.</h2>
+            </div>
+            <p class="section-head__text">
+              Стараюсь собирать проект поэтапно: от системных переменных и layout-базы до UX-полировки и проверки
+              финальных состояний.
+            </p>
+          </div>
+
+          <div class="feature-grid">
+            <article class="feature-card" data-reveal>
+              <span class="feature-card__number">01</span>
+              <h3>Каркас и дизайн-система</h3>
+              <p>Закладываю переменные, контейнеры, типографику, радиусы, тени и масштаб отступов до наполнения страниц.</p>
+            </article>
+            <article class="feature-card" data-reveal>
+              <span class="feature-card__number">02</span>
+              <h3>Семантика и структура</h3>
+              <p>Слежу за логикой секций, заголовков, списков и интерактивных элементов, чтобы проект было удобно поддерживать.</p>
+            </article>
+            <article class="feature-card" data-reveal>
+              <span class="feature-card__number">03</span>
+              <h3>Адаптив и состояния</h3>
+              <p>Проверяю, как перестраиваются карточки, меню, CTA и формы на tablet/mobile, не полагаясь только на hover.</p>
+            </article>
+            <article class="feature-card" data-reveal>
+              <span class="feature-card__number">04</span>
+              <h3>Полировка и производительность</h3>
+              <p>Убираю лишний JS, слежу за весом медиа, проверяю переполнения, читаемость и плавность без перегрузки motion.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-head" data-reveal>
+            <div>
+              <p class="section-head__eyebrow">values</p>
+              <h2 class="section-head__title">Что считаю важным в интерфейсной разработке.</h2>
+            </div>
+            <p class="section-head__text">
+              Мне близок подход, где проект выглядит современно, но не жертвует логикой ради эффекта.
+            </p>
+          </div>
+
+          <div class="value-grid">
+            <article class="surface-card" data-reveal>
+              <h3>Визуальная дисциплина</h3>
+              <p>Сетка, типографика, плотность блоков и контраст работают как единая система, а не случайный набор решений.</p>
+            </article>
+            <article class="surface-card" data-reveal>
+              <h3>Доступность по умолчанию</h3>
+              <p>Сразу учитываю focus-visible, keyboard navigation, контраст и сценарии без hover-зависимости.</p>
+            </article>
+            <article class="surface-card" data-reveal>
+              <h3>Комфорт редактирования</h3>
+              <p>Держу контент и структуру предсказуемыми, чтобы проект можно было расширять, а не переписывать с нуля.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-head" data-reveal>
+            <div>
+              <p class="section-head__eyebrow">stack</p>
+              <h2 class="section-head__title">Технологии, которыми закрываю ключевые задачи.</h2>
+            </div>
+            <p class="section-head__text">
+              Набор инструментов подбираю под задачу: от статического многостраничного сайта до интерактивной
+              логики каталога и форм.
+            </p>
+          </div>
+
+          <div class="tech-stack" data-reveal>
+            <article class="tech-stack__group">
+              <h3 class="tech-stack__title">Верстка</h3>
+              <ul class="tech-stack__chips">
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>SCSS mindset</li>
+                <li>BEM naming</li>
+                <li>Clamp()</li>
+                <li>Grid / Flex</li>
+              </ul>
+            </article>
+            <article class="tech-stack__group">
+              <h3 class="tech-stack__title">Интерактивность</h3>
+              <ul class="tech-stack__chips">
+                <li>JavaScript</li>
+                <li>Forms</li>
+                <li>State management</li>
+                <li>Intersection Observer</li>
+                <li>Accessible motion</li>
+                <li>LocalStorage</li>
+              </ul>
+            </article>
+            <article class="tech-stack__group">
+              <h3 class="tech-stack__title">Качество</h3>
+              <ul class="tech-stack__chips">
+                <li>Semantic markup</li>
+                <li>Focus states</li>
+                <li>Responsive QA</li>
+                <li>Performance mindset</li>
+                <li>Reusable blocks</li>
+                <li>Content-ready layout</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container cta-block" data-reveal>
+          <div class="cta-block__content">
+            <p class="cta-block__eyebrow">let's work</p>
+            <h2 class="cta-block__title">Если у вас есть проект, который нужно аккуратно собрать во frontend, можно обсудить детали.</h2>
+            <p class="cta-block__text">
+              Подключусь к созданию витрины, лендинга, MVP или отдельного интерфейсного блока и помогу довести его до
+              уверенного, цельного состояния.
+            </p>
+          </div>
+          <div class="cta-block__actions">
+            <a class="button button--primary button--large" href="./contacts.html">Написать</a>
+            <a class="button button--ghost button--large" href="./index.html#projects">Снова посмотреть проекты</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__container">
+        <div class="footer__brand">
+          <a class="footer__logo" href="./index.html">Ezge Portfolio Hub</a>
+          <p class="footer__text">
+            Многостраничный portfolio-hub, где каждый проект — отдельный продукт с продуманной структурой, адаптивом
+            и современной frontend-реализацией.
+          </p>
+        </div>
+
+        <nav class="footer__nav" aria-label="Навигация по сайту">
+          <a href="./index.html#projects">Проекты</a>
+          <a href="./about.html" aria-current="page">Обо мне</a>
+          <a href="./contacts.html">Контакты</a>
+          <a href="./404.html">404</a>
+        </nav>
+
+        <div class="footer__contacts">
+          <a href="mailto:ezge18@gmail.com">ezge18@gmail.com</a>
+          <a href="https://t.me/f01d3r7" target="_blank" rel="noreferrer">Telegram</a>
+          <a href="https://github.com/f01d3r7" target="_blank" rel="noreferrer">GitHub</a>
+        </div>
+      </div>
+      <div class="container footer__bottom">
+        <p>© <span data-current-year></span> Ezge Portfolio Hub</p>
+      </div>
+    </footer>
+  </body>
+</html>
